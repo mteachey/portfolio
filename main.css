@@ -354,7 +354,7 @@ h2{
 /******background-animation*******/
 svg#Layer_1 {
     position: absolute;
-    top: -100px;
+    top: 30px;
     left: 0;
     width:100%;
     opacity:1;
@@ -569,6 +569,12 @@ fill:#65A12C;
 }
 
 @media (min-width:760px){
+
+    svg#Layer_1 {
+    position: absolute;
+    top: -100px;
+    }
+    
     .st0, .st1, .st2, .st3{
         -moz-transform: rotate(35deg) translate(61px, -650px);
         -webkit-transform: rotate(35deg) translate(61px, -650px);
