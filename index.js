@@ -11,6 +11,12 @@ function handleClicToSeeWorkExamples(){
         $('.work-example').removeClass('js-toggle__display');
         $('.example-2').toggleClass('js-toggle__display');  
       });     
+      $('.mobile-buttons').on('click', '.js-toggle__mobile-button-work-3', function(event) {
+        $('.js-toggle__mobile-button-work').removeClass('button-active') ;
+        $(this).addClass('button-active') ;
+        $('.work-example').removeClass('js-toggle__display');
+        $('.example-3').toggleClass('js-toggle__display');  
+      });     
       
 }
 function handleMobileMenuAnimation(){
@@ -19,7 +25,7 @@ function handleMobileMenuAnimation(){
         $('nav').toggleClass('mobile-nav');
       });   
       $('nav').on('click',function(event) {
-        $(this).toggleClass('change');  
+        $('.mobile-menu-icon-container').removeClass('change');  
         $('nav').toggleClass('mobile-nav');
       });   
       
@@ -34,3 +40,4 @@ function onLoad() {
   // when the page loads, call `handleQuiz`
   $(onLoad);
 
+ 
