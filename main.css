@@ -43,7 +43,9 @@ nav{
 
 section {
     position: relative;
-    height: 20vh;
+    text-align:left;
+    padding:15px 20px;
+    
 }
 
 
@@ -54,31 +56,55 @@ ul{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 0px;
+    display: block;
+    list-style-type: none;
+    padding-top:10px;   
+}
+
+ul.nav{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+li{
+    padding-top:5px;
 }
 
 
 section:nth-child(odd){
-  background-color:grey;
+  background-color:lightgray;
 }
 
 h1{
     margin: 0;
     position: absolute;
     transform: translate(50%,50%);
-    top: 50%;
+    top: 75px;
     right: 50%;
+    font-size:22px;
+    width:90%;
 }
 
 h2{
     margin: 0;
-    position: absolute;
-    transform: translate(50%,34%);
-    top: 34%;
-    right: 50%;
+    text-align:left;
+    font-size:22px;
 }
 
+.block{
+    display:block;
+}
 
+.center-align{
+    text-align: center;
+}
 
+.subheading{
+    padding-top:10px;
+    font-size: 19px;
+    font-style: italic;
+}
 .home-page{
     height: 50vh;
 }
@@ -87,8 +113,37 @@ h2{
     margin: 0;
     position: absolute;
     transform: translate(50%,50%);
-    top: 65%;
+    top: 164px;
     right: 50%;
+    padding: 10px;
+    border: 2px solid green;
+    background-color: #fff;
+}
+
+.work-thumbnail {
+    width: 220px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 20px auto;
+}
+
+.blog-thumbnail {
+    width: 220px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 20px auto;
+}
+
+.contact-form {
+    width: 325px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 20px auto;
+}
+
+.thumb-size-button {
+    padding: 5px 10px;
+    border: #000 1px solid;
 }
   
 
