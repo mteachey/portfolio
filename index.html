@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Michroma|Nunito|Nunito+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <body>
         <main class="container">
             <header class="header">  
                 <nav>
@@ -56,14 +56,61 @@
             </section>    
             <section class="work">
                 <h2 class="center-align">My Work</h2>
-                <div class="work-thumbnail">
-
+                <div class="mobile-buttons js-toggle-display__mobile">
+                    <button>Javascript</button>
+                    <button>Websites</button>
+                    <button>React</button>
                 </div>
-                <div class="work-thumbnail">
+                <div class="work-example-container display__mobile">
+                    <div class="work-example">
+                        <img src="images/work-example-quizapp-home.jpg" class="work-image"/>
+                        <h2 class="work-title">Are you a Yogi</h2>
+                        <p class="work-description">Are You a Yogi is clean, user-friendly, fun app that allows users to move through a set of 10 questions (more could be easily added) to test their yoga knowledge.</p>
+                        <p class="work-description">Users begin on a start screen, then move through one question and answer at a time. They must choose an answer from a selection of custom radio buttons before being allowed to move on and learn the correct answer. After each their guesses is submitted, users immediately are shown if they got the question correct, the correct answer with an explanation, their current score, and current progress. Once the user has completed all the questions and determined the answer to the final question, they are taken to a final, summary page.</p>
+                        <p class="work-description">In addition, users experience some simple CSS animations that add to the enjoyment of the quiz.</p>
+                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
+                        </p>
+                        <p class="work-links">
+                            Link to GitHub Repo : <a href=="https://github.com/mteachey/quiz-app">https://github.com/mteachey/quiz-app<a>
+                            Link to Live App : <a href="https://mteachey.github.io/quiz-app/">https://mteachey.github.io/quiz-app/</a>
+                        </p>
+                    </div><!--end .work-example-->
+                    <div class="work-example">
+                        <img src="images/work-example-quizapp-home.jpg" class="work-image"/>
+                        <h2 class="work-title">Are you a Yogi</h2>
+                        <p class="work-description">Are You a Yogi is clean, user-friendly, fun app that allows users to move through a set of 10 questions (more could be easily added) to test their yoga knowledge.</p>
+                        <p class="work-description">Users begin on a start screen, then move through one question and answer at a time. They must choose an answer from a selection of custom radio buttons before being allowed to move on and learn the correct answer. After each their guesses is submitted, users immediately are shown if they got the question correct, the correct answer with an explanation, their current score, and current progress. Once the user has completed all the questions and determined the answer to the final question, they are taken to a final, summary page.</p>
+                        <p class="work-description">In addition, users experience some simple CSS animations that add to the enjoyment of the quiz.</p>
+                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
+                        </p>
+                        <p class="work-links">
+                            Link to GitHub Repo : <a href=="https://github.com/mteachey/quiz-app">https://github.com/mteachey/quiz-app<a>
+                            Link to Live App : <a href="https://mteachey.github.io/quiz-app/">https://mteachey.github.io/quiz-app/</a>
+                        </p>
+                    </div><!--end .work-example-->
+                    <div class="work-example">
+                        <img class="work-image"/>
+                        <h2 class="work-title"></h2>
+                        <p class="work-description"></p>
+                        <p class="work-technologies"></p>
+                        <p class="work-links">
+                            <a></a>
 
-                </div>
-                <div class="work-thumbnail">
+                            <a></a>
 
+                        </p>
+                    </div><!--end .work-example-->                   
+                </div><!--end .work-example-container-->
+                <div class="desktop-thumbnail-container display__desktop">
+                    <div class="work-thumbnail">
+
+                    </div>
+                    <div class="work-thumbnail">
+
+                    </div>
+                    <div class="work-thumbnail">
+
+                    </div>
                 </div>
             </section>  
             <section class="blog">
@@ -83,9 +130,14 @@
                 <form class="contact-form"></form>
             </section> 
             <footer>
-                <p><a href="">melindateachey@gmail.com</a></p>
-                <button class="back-to-top thumb-size-button">^</button>
-                <ul class="nav"><li>about</li><li>contact</li><li>blog</li><li>work</li></ul>
+                <p><a href="mailto:melindateachey@gmail.com">melindateachey@gmail.com</a></p>
+                <div class="social"> 
+                    <a href="https://www.linkedin.com/in/melinda-teachey-761251aa/"><img src="images/social/linkedIn.png"></a>
+                    <a href="https://github.com/mteachey"><img src="images/social/github.png"></a>
+                </div>
+                <input class="icon-button" type="image" src="images/back-to-top-icon.png" alt="back to top button">
+                <ul class="nav display__desktop"><li>about</li><li>contact</li><li>blog</li><li>work</li></ul>
+               
                 <p>copyright 2020</p>
             </footer>
         </main>
