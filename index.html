@@ -10,9 +10,8 @@
   <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
-        
-            <header id="top" class="header">  
+<body>       
+            <header id="top" class="header no-scroll-header">  
                 <div class="mobile-menu-icon-container">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
@@ -20,156 +19,155 @@
                   </div>
                 <nav>
                     <ul class="nav">
-                        <li><a href="#about-mark">about</a></li>
-                        <li><a href="#contact-mark">contact</a></li>
-                        <li><a href="#blog-mark">blog</a></li>
-                        <li><a href="#work-mark">work</a></li>
+                        <li class="nav-link"><a href="#">home</a></li>
+                        <li class="nav-link"><a href="#about-mark">about</a></li>
+                        <li class="nav-link"><a href="#contact-mark">contact</a></li>
+                        <li class="nav-link"><a href="#blog-mark">blog</a></li>
+                        <li class="nav-link"><a href="#work-mark">work</a></li>
                     </ul>
                 </nav>                    
             </header>
-            <main class="container">
-            <section class="home-page">
-                <h1>Hi! I'm Melinda<span class="block subheading">- the front-end developer guru</br<span></h1>
-                <a class="green-button" href="#work-mark">View My Work</a>
-                <div class="marker" id="about-mark"></div>
-            </section>
-            <section id="about">
-                <div class="about">
-                    <h2>About</h2>
-                    <p>I am one of those rare, truly well-rounded, good-at-it all individuals. I am an experienced  front-end developer who loves getting knee deep in code and coming up hours later. I have a knack for designing, eye-loving layouts with an intuitive understanding of good user-experience. On top of all of that, I am good at connecting and communicating with people....I really have it all!</p>
+            <main>
+                <section class="home-page">
+                    <h1>Hi! I'm Melinda<span class="block subheading">- the front-end development guru</br<span></h1>
+                    <a class="green-button" href="#work-mark">View My Work</a>
+                    <div class="marker" id="about-mark"></div>
+                </section>
+                <section id="about" role="region" aria-label="About Melinda">
+                    <div class="about">
+                        <h2>About</h2>
+                        <p>I am one of those rare, truly well-rounded, good-at-it all individuals. I am an experienced  front-end developer who loves getting knee deep in code and coming up hours later. I have a knack for designing, eye-loving layouts with an intuitive understanding of good user-experience. On top of all of that, I am good at connecting and communicating with people....I really have it all!</p>
 
-                    <p>I have been working as a developer, honing my skills for four years now. For two of those years, I was a website manager and developer for a high-paced marketing firm. I was their lead developer on several site refreshes and new sites and managed over 50 websites on various CMSs and platforms. Currently, I am free-lancer, creating client-pleasing websites, applications and experiences for clients.</p> 
+                        <p>I have been working as a developer, honing my skills for four years now. For two of those years, I was a website manager and developer for a high-paced marketing firm. I was their lead developer on several site refreshes and new sites and managed over 50 websites on various CMSs and platforms. Currently, I am free-lancer, creating client-pleasing websites, applications and experiences for clients.</p> 
+                            
+                        <p>Before pursuing my love of code, I was a middle school science teacher and chemical engineering graduate from Virginia Tech. I have had the fortune to live and work in such amazing cities New York and Washington, D.C., as well as, small, mountain towns like Boone, NC. I currently call Denver, CO my home and love it! When I am not working with code, you can usually find me enjoying the outdoors with my dog and a pair of hiking shoes or a bike.
+                        </p>
+                    </div>
+                    <div class="about" id="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>JavaScript and JQuery</li>
+                            <li>React</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Responsive Design</li>
+                            <li>Wordpress and Joomla Development</li>
+                            <li>Magento and Shopify Development</li>
+                            <li>PHP</li>
+                            <li>eCommerce</li>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>InDesign</li>
+                            <li>Bootstrap</li>
+                            <li>Git and GitHub</li>
+                            <li>...as well as many more depending on the project.</li>
+                        </ul>
+
+                        <a class="contact-button-about orange-button  blue-inside-button button solo-button" href="#contact-mark">Contact Me</a>
+                        <div class="marker" id="work-mark"></div>
+                    </div>  
+                
+                </section>
+                
+                <section id="work" role="region" aria-label="Melinda's work samples">
+                    <h2 class="center-align">My Work</h2>
+                    <div class="mobile-buttons js-toggle-display__mobile">
+                        <button class="green-button js-toggle__mobile-button-work js-toggle__mobile-button-work-1 button-active">Javascript</button>
+                        <button class="purple-button js-toggle__mobile-button-work js-toggle__mobile-button-work-2">Websites</button>
+                        <button class="orange-button js-toggle__mobile-button-work js-toggle__mobile-button-work-3">React</button>
+                    </div>
+                    <div class="work-example-container container display__mobile">
+                        <div class="work-example example-1 js-toggle__display">
+                            <h3 class="work-title">Are you a Yogi</h3>
+                            <img src="images/work-example-quizapp-home.jpg" alt="screenshot of Are You a Yogi app start screen" class="work-image"/>
+                            <p class="work-description">Are You a Yogi is clean, user-friendly, fun app that allows users to move through a set of 10 questions (more could be easily added) to test their yoga knowledge.</p>
+                            <p class="work-description">Users begin on a start screen, then move through one question and answer at a time. They must choose an answer from a selection of custom radio buttons before being allowed to move on and learn the correct answer. After each their guesses is submitted, users immediately are shown if they got the question correct, the correct answer with an explanation, their current score, and current progress. Once the user has completed all the questions and determined the answer to the final question, they are taken to a final, summary page.</p>
+                            <p class="work-description">In addition, users experience some simple CSS animations that add to the enjoyment of the quiz.</p>
+                            <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
+                            </p>
+                            <p class="work-links">
+                            <a href="https://github.com/mteachey/quiz-app">Link to GitHub Repo : https://github.com/mteachey/quiz-app<>
+                                <a href="https://mteachey.github.io/quiz-app/">Link to Live App : https://mteachey.github.io/quiz-app/</a>
+                            </p>
+                        </div><!--end .work-example-->
+                        <div class="work-example example-2">
+                            <h3 class="work-title">This would be a second sample</h3>
+                            <img alt="screenshot of Are You a Yogi app start screen" src="images/work-example-quizapp-home.jpg" class="work-image"/>
+                            <p class="work-description">Are You a Yogi is clean, user-friendly, fun app that allows users to move through a set of 10 questions (more could be easily added) to test their yoga knowledge.</p>
+                            <p class="work-description">Users begin on a start screen, then move through one question and answer at a time. They must choose an answer from a selection of custom radio buttons before being allowed to move on and learn the correct answer. After each their guesses is submitted, users immediately are shown if they got the question correct, the correct answer with an explanation, their current score, and current progress. Once the user has completed all the questions and determined the answer to the final question, they are taken to a final, summary page.</p>
+                            <p class="work-description">In addition, users experience some simple CSS animations that add to the enjoyment of the quiz.</p>
+                            <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
+                            </p>
+                            <p class="work-links">
+                                <a href="https://github.com/mteachey/quiz-app">Link to GitHub Repo : https://github.com/mteachey/quiz-app<>
+                                <a href="https://mteachey.github.io/quiz-app/">Link to Live App : https://mteachey.github.io/quiz-app/</a>
+                            </p>
+                        </div><!--end .work-example-->
                         
-                    <p>Before pursuing my love of code, I was a middle school science teacher and chemical engineering graduate from Virginia Tech. I have had the fortune to live and work in such amazing cities New York and Washington, D.C., as well as, small, mountain towns like Boone, NC. I currently call Denver, CO my home and love it! When I am not working with code, you can usually find me enjoying the outdoors with my dog and a pair of hiking shoes or a bike.
-                    </p>
-                </div>
-                <div class="about" id="skills">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>JavaScript and JQuery</li>
-                        <li>React</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Responsive Design</li>
-                        <li>Wordpress and Joomla Development</li>
-                        <li>Magento and Shopify Development</li>
-                        <li>PHP</li>
-                        <li>eCommerce</li>
-                        <li>Photoshop</li>
-                        <li>Illustrator</li>
-                        <li>InDesign</li>
-                        <li>Bootstrap</li>
-                        <li>Git and GitHub</li>
-                        <li>...as well as many more depending on the project.</li>
-                    </ul>
-                </div>  
-                <div class="marker" id="work-mark"></div>
-            </section>
-             
-            <section id="work">
-                <h2 class="center-align">My Work</h2>
-                <div class="mobile-buttons js-toggle-display__mobile">
-                    <button class="green-button js-toggle__mobile-button-work js-toggle__mobile-button-work-1 button-active">Javascript</button>
-                    <button class="purple-button js-toggle__mobile-button-work js-toggle__mobile-button-work-2">Websites</button>
-                    <button class="orange-button js-toggle__mobile-button-work js-toggle__mobile-button-work-3">React</button>
-                </div>
-                <div class="work-example-container display__mobile">
-                    <div class="work-example example-1 js-toggle__display">
-                        <h3 class="work-title">Are you a Yogi</h3>
-                        <img src="images/work-example-quizapp-home.jpg" class="work-image"/>
-                        <p class="work-description">Are You a Yogi is clean, user-friendly, fun app that allows users to move through a set of 10 questions (more could be easily added) to test their yoga knowledge.</p>
-                        <p class="work-description">Users begin on a start screen, then move through one question and answer at a time. They must choose an answer from a selection of custom radio buttons before being allowed to move on and learn the correct answer. After each their guesses is submitted, users immediately are shown if they got the question correct, the correct answer with an explanation, their current score, and current progress. Once the user has completed all the questions and determined the answer to the final question, they are taken to a final, summary page.</p>
-                        <p class="work-description">In addition, users experience some simple CSS animations that add to the enjoyment of the quiz.</p>
-                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
-                        </p>
-                        <p class="work-links">
-                           <a href="https://github.com/mteachey/quiz-app">Link to GitHub Repo : https://github.com/mteachey/quiz-app<>
-                            <a href="https://mteachey.github.io/quiz-app/">Link to Live App : https://mteachey.github.io/quiz-app/</a>
-                        </p>
-                    </div><!--end .work-example-->
-                    <div class="work-example example-2">
-                        <h3 class="work-title">This would be a second sample</h3>
-                        <img src="images/work-example-quizapp-home.jpg" class="work-image"/>
-                        <p class="work-description">Are You a Yogi is clean, user-friendly, fun app that allows users to move through a set of 10 questions (more could be easily added) to test their yoga knowledge.</p>
-                        <p class="work-description">Users begin on a start screen, then move through one question and answer at a time. They must choose an answer from a selection of custom radio buttons before being allowed to move on and learn the correct answer. After each their guesses is submitted, users immediately are shown if they got the question correct, the correct answer with an explanation, their current score, and current progress. Once the user has completed all the questions and determined the answer to the final question, they are taken to a final, summary page.</p>
-                        <p class="work-description">In addition, users experience some simple CSS animations that add to the enjoyment of the quiz.</p>
-                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
-                        </p>
-                        <p class="work-links">
-                            Link to GitHub Repo : <a href=="https://github.com/mteachey/quiz-app">https://github.com/mteachey/quiz-app<a>
-                            Link to Live App : <a href="https://mteachey.github.io/quiz-app/">https://mteachey.github.io/quiz-app/</a>
-                        </p>
-                    </div><!--end .work-example-->
+                        <div class="work-example example-3">
+                            <h3 class="work-title">This would a 3rd sample</h3>
+                            <img alt="screenshot of Are You a Yogi app start screen" src="images/work-example-quizapp-home.jpg" class="work-image"/>
+                            <p class="work-description">Are You a Yogi is clean, user-friendly, fun app that allows users to move through a set of 10 questions (more could be easily added) to test their yoga knowledge.</p>
+                            <p class="work-description">Users begin on a start screen, then move through one question and answer at a time. They must choose an answer from a selection of custom radio buttons before being allowed to move on and learn the correct answer. After each their guesses is submitted, users immediately are shown if they got the question correct, the correct answer with an explanation, their current score, and current progress. Once the user has completed all the questions and determined the answer to the final question, they are taken to a final, summary page.</p>
+                            <p class="work-description">In addition, users experience some simple CSS animations that add to the enjoyment of the quiz.</p>
+                            <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
+                            </p>
+                            <p class="work-links">
+                                Link to GitHub Repo : <a href=="https://github.com/mteachey/quiz-app">https://github.com/mteachey/quiz-app<a>
+                                Link to Live App : <a href="https://mteachey.github.io/quiz-app/">https://mteachey.github.io/quiz-app/</a>
+                            </p>
+                        </div><!--end .work-example-->
+                        <div class="work-example" style="display:none;">
+                            <img alt="alt tag for image" class="work-image"/>
+                            <h2 class="work-title"></h2>
+                            <p class="work-description"></p>
+                            <p class="work-technologies"></p>
+                            <p class="work-links">
+                                <a></a>
+
+                                <a></a>
+
+                            </p>
+                        </div><!--end .work-example-->                   
+                    </div><!--end .work-example-container-->
+                    <div class="marker" id="blog-mark"></div>
+                </section>  
+                <section id="blog">
+                    <h2>Blog</h2>
+                    <div class="container">
+                        <div class="blog-thumbnail">
+
+                        </div>
+                        <div class="blog-thumbnail">
+
+                        </div>
+                        <div class="blog-thumbnail">
+
+                        </div>
+                    </div>
+                    <a class="white-link"  href="">More posts...This will link to a blog landing page</a>
+                    <div class="marker" id="contact-mark"></div>
+                </section> 
+                <section id="contact">
+                    <h2 class="center-align">Contact</h2>
+                    <form class="contact-form"></form>
                     
-                    <div class="work-example example-3">
-                        <h3 class="work-title">This would a 3rd sample</h3>
-                        <img src="images/work-example-quizapp-home.jpg" class="work-image"/>
-                        <p class="work-description">Are You a Yogi is clean, user-friendly, fun app that allows users to move through a set of 10 questions (more could be easily added) to test their yoga knowledge.</p>
-                        <p class="work-description">Users begin on a start screen, then move through one question and answer at a time. They must choose an answer from a selection of custom radio buttons before being allowed to move on and learn the correct answer. After each their guesses is submitted, users immediately are shown if they got the question correct, the correct answer with an explanation, their current score, and current progress. Once the user has completed all the questions and determined the answer to the final question, they are taken to a final, summary page.</p>
-                        <p class="work-description">In addition, users experience some simple CSS animations that add to the enjoyment of the quiz.</p>
-                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
-                        </p>
-                        <p class="work-links">
-                            Link to GitHub Repo : <a href=="https://github.com/mteachey/quiz-app">https://github.com/mteachey/quiz-app<a>
-                            Link to Live App : <a href="https://mteachey.github.io/quiz-app/">https://mteachey.github.io/quiz-app/</a>
-                        </p>
-                    </div><!--end .work-example-->
-                    <div class="work-example">
-                        <img class="work-image"/>
-                        <h2 class="work-title"></h2>
-                        <p class="work-description"></p>
-                        <p class="work-technologies"></p>
-                        <p class="work-links">
-                            <a></a>
-
-                            <a></a>
-
-                        </p>
-                    </div><!--end .work-example-->                   
-                </div><!--end .work-example-container-->
-                <div class="desktop-thumbnail-container display__desktop">
-                    <div class="work-thumbnail">
-
+                </section> 
+                <footer role="contentinfo" aria-label="contact information">
+                    <div class="footer-top">
+                        <p><a href="mailto:melindateachey@gmail.com">melindateachey@gmail.com</a></p>
+                        <div class="social"> 
+                            <a href="https://www.linkedin.com/in/melinda-teachey-761251aa/"><img alt="LinkedIn icon"src="images/social/linkedIn.png"></a>
+                            <a href="https://github.com/mteachey"><img alt="GitHub icon" src="images/social/github.png"></a>
+                        </div>
                     </div>
-                    <div class="work-thumbnail">
-
+                    <div class="footer-bottom">
+                        <a href="#"><img class="icon-button" src="images/back-to-top-icon.png" alt="back to top button"/></a>
+                        <ul class="nav display__desktop"><li>about</li><li>contact</li><li>blog</li><li>work</li></ul>               
+                        <p class="small-font">copyright 2020</p>
                     </div>
-                    <div class="work-thumbnail">
-
-                    </div>
-                </div>
-                <div class="marker" id="blog-mark"></div>
-            </section>  
-            <section id="blog">
-                <h2>Blog</h2>
-                <div class="blog-thumbnail">
-
-                </div>
-                <div class="blog-thumbnail">
-
-                </div>
-                <div class="blog-thumbnail">
-
-                </div>
-                <a class="white-link"  href="">More post...This will link to a blog landing page</a>
-                <div class="marker" id="contact-mark"></div>
-            </section> 
-            <section id="contact">
-                <h2 class="center-align">Contact</h2>
-                <form class="contact-form"></form>
-            </section> 
-            <footer>
-                <p><a href="mailto:melindateachey@gmail.com">melindateachey@gmail.com</a></p>
-                <div class="social"> 
-                    <a href="https://www.linkedin.com/in/melinda-teachey-761251aa/"><img src="images/social/linkedIn.png"></a>
-                    <a href="https://github.com/mteachey"><img src="images/social/github.png"></a>
-                </div>
-                <a href="#"><img class="icon-button" src="images/back-to-top-icon.png" alt="back to top button"/></a>
-                <ul class="nav display__desktop"><li>about</li><li>contact</li><li>blog</li><li>work</li></ul>
-               
-                <p>copyright 2020</p>
-            </footer>
-        </main>
+                </footer>
+            </main>
  
         <div class="background-animation">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

@@ -21,10 +21,6 @@ html {
     width: 100%;
 }
 
-body {
-    overflow-x: hidden;
-    width: 100%
-}
   
 body {
     text-align: center;
@@ -32,16 +28,32 @@ body {
     font-size: 18px;
     line-height: 1.3;
     color:#00003d;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.small-font{
+    font-size:.75em;
+        margin-block-start: .25em;
+        margin-block-end: .25em;
 }
 
 header{
     position: fixed;
-    background-color: white;
+   
     z-index: 100;
     border-bottom: 1px gray solid;
     width: 100%;
     text-align: right;
     height: 55px;
+}
+
+.no-scroll-header{
+    background-color: white;
+}
+
+.scroll-header{
+    background-color: white;
 }
 
 nav{
@@ -79,9 +91,12 @@ ul{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        flex-direction: column;
-       align-items: center;
-        
+         
+}
+
+.mobile-nav .nav{
+    flex-direction: column;
+    align-items: center;     
 }
 
 li{
@@ -158,11 +173,12 @@ section {
 
 a{
     color:#00003d;
+    text-decoration:none;
 }
 
 .white-link{
     color:#fff;
-    text-decoration:none;
+    
 }
 
 h1,h2, h3{
@@ -234,17 +250,30 @@ h2{
     margin-bottom: 60px;
 }
 
-.mobile-buttons button {
+.button, button{
     padding: 10px;
     border: 1px solid #007900;
     width: 100px;
     background-color: #fff;
+    display:block;
 }
 
-.mobile-buttons button:nth-child(2){
+.solo-button{
+    display:block;
+    margin:auto;
+    width:150px;
+    text-align:center;
+}
+
+.blue-inside-button{
+    background-color:#00003d;
+    color:#fff;
+}
+
+.purple-button{
     border: 1px solid #460a86;
 }
-.mobile-buttons button:nth-child(3){
+.orange-button{
     border: 1px solid #d5652c;
 }
 
@@ -350,6 +379,174 @@ h2{
 .marker {
     height: 30px;
 }
+
+/********Media Queries*********/
+@media only screen and (min-width:760px){
+
+.mobile-menu-icon-container{
+    display:none;
+}
+
+.link-active{
+    border-bottom: 2px #460a86 solid;
+    -webkit-animation-name: active-link;
+    -webkit-animation-duration: 2.5s;
+    animation-name: active-link;
+    animation-duration: 2.5s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes active-link {
+    0% {
+        border-bottom: 2px #460a86 solid;     
+    }
+    
+    100%{
+        border-bottom: 0px #460a86 solid;     
+    }
+    }
+
+nav {
+    display: block;
+    width: 425px;
+    position: absolute;
+    right: 10px;
+}
+
+.nav li {
+    width: 75px;
+    padding-top: 10px;
+}
+
+ul{
+    margin-top: 0px;
+}
+
+header{
+    border-bottom:0px solid #00003D;
+    height:40px;
+}
+
+.no-scroll-header{
+    background-color: transparent;
+   
+}
+
+.scroll-header{
+    background-color:#fff;
+    border-bottom: 1px solid #d5652c;
+}
+
+
+.clearHeader.darkHeader {
+background:#000;
+}
+
+
+.nav a:active {
+    border-bottom: orange solid 2px;
+}
+
+.home-page {
+    height: 36vh;
+}
+}/*end of MQ760px*/
+
+@media only screen and (min-width:960px){
+.home-page {
+    height: 100vh;
+}
+
+h1{
+    top: 125px;
+    right: 10%;
+    font-size: 30px;
+    text-align: left;
+}
+
+.home-page a {
+    top: 238px;
+    right: 34%;
+}
+
+
+#about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about{
+    width: 45%;
+    padding: 30px 40px;
+}
+
+#skills ul{
+    position:relative;
+}
+
+/*#skills ul::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: -32px;
+    top: -75px;
+    bottom: 0;
+    border: 1px solid #ee710c;
+    border-width: 0 0 0 1.25px;
+}*/
+
+.mobile-buttons{
+    display:none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.work-example{
+    width:600px;
+    display:block;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+h3{
+    text-align:center;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.footer-top, .footer-bottom {
+    width: 400px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer-bottom{
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#contact .center-align {
+    text-align: left;
+}
+
+.contact-button-about{
+    position: absolute;
+    left: 49px;
+    bottom: 100px;
+}
+
+
+}/*end MQ 960*/
 
 /******background-animation*******/
 svg#Layer_1 {
@@ -568,13 +765,49 @@ fill:#65A12C;
 }
 }
 
-@media (min-width:760px){
+@media only screen and (min-width:600px){
 
     svg#Layer_1 {
     position: absolute;
-    top: -100px;
+    top: -60px;
     }
-    
+
+    .st0, .st1, .st2, .st3{
+        -moz-transform: rotate(35deg) translate(61px, -650px);
+        -webkit-transform: rotate(35deg) translate(61px, -650px);
+        -o-transform: rotate(35deg) translate(61px, -650px);
+        -ms-transform: rotate(35deg) translate(61px, -650px);
+        transform: rotate(35deg) translate(61px, -550px);
+        fill:#460a86;
+    }
+
+    @keyframes opacity {
+        0%, 100% {
+            fill:#460a86;
+            transform: rotate(35deg) translate(61px, -550px);
+        }
+        25%{
+            fill:#65A12C;
+            /*transform: rotate(45deg) translate(61px, -650px);*/
+        }
+        50% {
+            fill:#00003D;
+            transform: rotate(60deg) translate(61px, -550px);
+        }
+        75%{
+        fill:#65A12C;
+            /*transform: rotate(45deg) translate(61px, -650px);*/
+        }
+        }
+}
+
+@media only screen and (min-width:960px){
+
+    svg#Layer_1 {
+        top: -100px;
+        }
+
+
     .st0, .st1, .st2, .st3{
         -moz-transform: rotate(35deg) translate(61px, -650px);
         -webkit-transform: rotate(35deg) translate(61px, -650px);
@@ -587,7 +820,7 @@ fill:#65A12C;
     @keyframes opacity {
         0%, 100% {
             fill:#460a86;
-          transform: rotate(35deg) translate(250px, 0px);
+          transform: rotate(35deg) translate(61px, -650px);
         }
         25%{
             fill:#65A12C;
@@ -595,14 +828,11 @@ fill:#65A12C;
         }
         50% {
             fill:#00003D;
-          transform: rotate(60deg) translate(250px, -0px);
+          transform: rotate(60deg) translate(61px, -650px);
         }
         75%{
         fill:#65A12C;
             /*transform: rotate(45deg) translate(61px, -650px);*/
         }
         }
-
-
-
 }
