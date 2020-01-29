@@ -496,6 +496,7 @@ h1{
 #about {
     display: flex;
     justify-content: space-between;
+    min-height: 960px;
 }
 
 .about{
@@ -565,11 +566,17 @@ footer {
 .contact-button-about{
     position: absolute;
     left: 49px;
-    bottom: 100px;
+    bottom: 7%;
 }
 
 
 }/*end MQ 960*/
+
+@media only screen and (min-width:1060px){
+#about {
+    min-height: 900px;
+}
+}
 
 /******background-animation*******/
 svg#Layer_1 {
@@ -580,6 +587,7 @@ svg#Layer_1 {
     opacity:1;
     z-index:-2;
     overflow:hidden;
+    transform:translateZ(0);
     
 }
 .st0{fill:#00003D;}

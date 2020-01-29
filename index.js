@@ -49,7 +49,6 @@ function MobileMenuAnimation(){
         $('nav').removeClass('mobile-nav');
     });        
 
-console.log('MManimation ran');
 }
 
 
