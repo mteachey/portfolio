@@ -1,6 +1,6 @@
 Melinda's Portfolio site
 
-Overview — This repor contains the files for my portfolio. They can best be viewed at https://mteachey.github.io/portfolio/ (for now)
+Overview — This repo contains the files for my portfolio. They can best be viewed at https://mteachey.github.io/portfolio/ (for now)
 
 Installation instructions — None.
 
