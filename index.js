@@ -20,24 +20,6 @@ function handleClickToSeeWorkExamples(){
       
 }
 
-/*function checkSize(){
-    let property = $(".mobile-menu-icon-container").css("display");
-    console.log(`this is the property ${property}`);
-    if ($(".mobile-menu-icon-container").css("display") == "block" ){
-        $('.mobile-menu-icon-container').on('click',function(event) {
-            $(this).toggleClass('change');  
-            $('nav').toggleClass('mobile-nav');
-        });   
-        $('nav').on('click', function(event) {
-            $('.mobile-menu-icon-container').removeClass('change');  
-            $('nav').toggleClass('mobile-nav');
-        });       
-        console.log('MManimation ran');
-    }
-    console.log('checkSize ran');
-}
-*/
-
 function MobileMenuAnimation(){
         
     $('.mobile-menu-icon-container').on('click',function(event) {
@@ -60,7 +42,6 @@ function activeNavLinks(){
 }
 
 function navScrollEffect() {
-    //caches a jQuery object containing the header element
     var header = $(".header");
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
@@ -78,14 +59,12 @@ function navScrollEffect() {
 function onLoad() {   
     handleClickToSeeWorkExamples();
     MobileMenuAnimation();
-  //  checkSize();
-   // $(window).resize(checkSize);
+
     navScrollEffect();
    ;
    activeNavLinks();
   }
   
-  // when the page loads, call `handleQuiz`
   $(onLoad);
 
  

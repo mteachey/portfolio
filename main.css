@@ -348,6 +348,7 @@ h2{
     margin-top: 20px;
     margin-bottom: 20px;
     display: block;
+    text-decoration:underline;
 }
 
 .js-toggle__display{
@@ -471,7 +472,7 @@ background:#000;
 }
 
 .home-page {
-    height: 36vh;
+    height: 60vh;
 }
 }/*end of MQ760px*/
 
