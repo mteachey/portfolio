@@ -23,6 +23,7 @@ html {
 
   
 body {
+    margin: 0;
     text-align: center;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
@@ -237,7 +238,7 @@ h2{
     margin: 0;
     position: absolute;
     transform: translate(50%,50%);
-    top: 195px;
+    top: 205px;
     right: 50%;
     padding: 10px;
     border: 2px solid green;
@@ -393,6 +394,19 @@ h2{
 }
 
 /********Media Queries*********/
+
+@media only screen and (min-width:500px){
+.home-page {
+        height: 80vh;
+    }
+
+.home-page a {
+        top: 167px;
+}
+
+
+}
+
 @media only screen and (min-width:760px){
 body {
     font-size: 18px;
