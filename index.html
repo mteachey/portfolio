@@ -30,8 +30,10 @@
             </header>
             <main>
                 <section class="home-page">
-                    <h1>Hi! I'm Melinda<span class="block subheading">- the front-end development guru<br></span></h1>
-                    <a class="green-button" href="#work-page">View My Work</a>                 
+                    <div class="centered-content">
+                        <h1>Hi! I'm Melinda</h1><h2 class="tagline subheading"><span>-front-end developer,</span><span> problem-solver,</span><span> do-gooder</span></h2>
+                        <a class="green-button" href="#work-page">View My Work</a> 
+                    </div>                
                 </section>
                 <div class="marker" id="about-page"></div>
                 <section id="about" aria-label="About Melinda">
@@ -47,20 +49,13 @@
                     <div class="about" id="skills">
                         <h2>Skills</h2>
                         <ul>
-                            <li>JavaScript and JQuery</li>
-                            <li>React</li>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>Responsive Design</li>
-                            <li>Wordpress and Joomla Development</li>
-                            <li>Magento and Shopify Development</li>
-                            <li>PHP</li>
+                            <li>HTML5, CSS3, JavaScript and JQuery, PHP, AJAX</li>
+                            <li>Website Management</li>
+                            <li>Responsive and UX Design</li>
+                            <li>Wordpress, Joomla, Shopify Development</li>
                             <li>eCommerce</li>
-                            <li>Photoshop</li>
-                            <li>Illustrator</li>
-                            <li>InDesign</li>
-                            <li>Bootstrap</li>
-                            <li>Git and GitHub</li>
+                            <li>Photoshop, Illustrator, InDesign</li>
+                            <li>Bootstrap, Git</li>
                             <li>...as well as many more depending on the project.</li>
                         </ul>
 
@@ -79,8 +74,37 @@
                     </div>
                     <div class="work-example-container container display__mobile">
                         <div class="work-example example-1 js-toggle__display">
+                            <h3 class="work-title">Weekend Roulette</h3>
+                            <div class="image-wrapper"><a target="_blank" href="https://mteachey.github.io/weekend-roulette/"><img alt="screenshot of Weekend Roulette app home screen includes the title, background image of the close-up of a rouletter wheel, and two buttons" src="images/screenshots/weekend-roulette-home-700x454.jpg" class="work-image"/></a></div>
+                            <p class="work-description">Weekend Roulette is app that allows users to leave the weekend decision making to the app.  The app provides two day activities and two evening ones with the 'spin of a wheel' (click of a button). </p>
+                            <p class="work-description">The app makes calls to four APIs - a hiking trail API, biking trail API, latitude/longitude API, and a restaurant API -  in order to obtain the activity selections for users.</p>
+                            <p class="work-description">Users experience some simple CSS animations that add to the enjoyment and experience of the app. </p>
+                            <p class="work-description">Future versions of the app will add more APIs, such as “points of interest” from Google Maps and music from Bands in Town, to add more types of activities. In addition, future versions will include an improved restaurant API and using Google Geocaching for latitude and longitude.
+                            </p>
+                            <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML, AJAX
+                            </p>
+                            <p class="work-links">
+                                <a href="https://github.com/mteachey/weekend-roulette" target="_blank">Link to GitHub Repo : https://github.com/mteachey/weekend-roulette</a>
+                                <a href="https://mteachey.github.io/weekend-roulette/" target="_blank">Link to Live App : https://mteachey.github.io/weekend-roulette/</a>
+                            </p>
+                        </div><!--end .work-example-->
+                        <div class="work-example example-2">
+                            <h3 class="work-title">Painted Sky Creative</h3>
+                            <div class="image-wrapper">
+                                <a href="http://paintedskycreative.com/"><img alt="screenshot of Are You a Yogi app start screen includes the title, image of a yogi, begin button, initial question progress and score" src="images/screenshots/psc-home-743x454.jpg" class="work-image"/></a>
+                            </div>
+                            <p class="work-description">Painted Sky Creative is a website for a freelance consulting business.</p>
+                            <p class="work-description">Visitors can view work samples and read about available services with call to actions on every page. </p>
+                            <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
+                            </p>
+                            <p class="work-links">
+                                <a href="http://paintedskycreative.com/" target="_blank">Link to Live Site : http://paintedskycreative.com/</a>
+                            </p>
+                        </div><!--end .work-example-->
+                        
+                        <div class="work-example example-3">
                             <h3 class="work-title">Are you a Yogi</h3>
-                            <img src="images/work-example-quizapp-home.jpg" alt="screenshot of Are You a Yogi app start screen includes the title, image of a yogi, begin button, initial question progress and score" class="work-image"/>
+                            <div class="image-wrapper"><a target="_blank" href="https://mteachey.github.io/quiz-app/"><img src="images/screenshots/yogi-start-700x470.jpg" alt="screenshot of Are You a Yogi app start screen includes the title, image of a yogi, begin button, initial question progress and score" class="work-image"/></a></div>
                             <p class="work-description">Are You a Yogi is a clean, user-friendly, fun app that allows users to move through a set of 10 questions (more could be easily added) to test their yoga knowledge.</p>
                             <p class="work-description">Users begin on a start screen, then move through one question and answer at a time. They must choose an answer from a selection of custom radio buttons before being allowed to move on and learn the correct answer. After each of their guesses is submitted, users immediately are shown if they got the question correct, the correct answer with an explanation, their current score, and current progress. Once the user has completed all the questions and determined the answer to the final question, they are taken to a final, summary page.</p>
                             <p class="work-description">In addition, users experience some simple CSS animations that add to the enjoyment of the quiz.</p>
@@ -88,33 +112,6 @@
                             </p>
                             <p class="work-links">
                             <a href="https://github.com/mteachey/quiz-app" target="_blank">Link to GitHub Repo : https://github.com/mteachey/quiz-app</a>
-                                <a href="https://mteachey.github.io/quiz-app/" target="_blank">Link to Live App : https://mteachey.github.io/quiz-app</a>
-                            </p>
-                        </div><!--end .work-example-->
-                        <div class="work-example example-2">
-                            <h3 class="work-title">This would be a second sample</h3>
-                            <img alt="screenshot of Are You a Yogi app start screen includes the title, image of a yogi, begin button, initial question progress and score" src="images/work-example-quizapp-home.jpg" class="work-image"/>
-                            <p class="work-description">Are You a Yogi is a clean, user-friendly, fun app that allows users to move through a set of 10 questions (more could be easily added) to test their yoga knowledge.</p>
-                            <p class="work-description">Users begin on a start screen, then move through one question and answer at a time. They must choose an answer from a selection of custom radio buttons before being allowed to move on and learn the correct answer. After each of their guesses is submitted, users immediately are shown if they got the question correct, the correct answer with an explanation, their current score, and current progress. Once the user has completed all the questions and determined the answer to the final question, they are taken to a final, summary page.</p>
-                            <p class="work-description">In addition, users experience some simple CSS animations that add to the enjoyment of the quiz.</p>
-                            <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
-                            </p>
-                            <p class="work-links">
-                                <a href="https://github.com/mteachey/quiz-app" target="_blank">Link to GitHub Repo : https://github.com/mteachey/quiz-app</a>
-                                <a href="https://mteachey.github.io/quiz-app/" target="_blank">Link to Live App : https://mteachey.github.io/quiz-app</a>
-                            </p>
-                        </div><!--end .work-example-->
-                        
-                        <div class="work-example example-3">
-                            <h3 class="work-title">This would a 3rd sample</h3>
-                            <img alt="screenshot of Are You a Yogi app start screen includes the title, image of a yogi, begin button, initial question progress and score" src="images/work-example-quizapp-home.jpg" class="work-image"/>
-                            <p class="work-description">Are You a Yogi is a clean, user-friendly, fun app that allows users to move through a set of 10 questions (more could be easily added) to test their yoga knowledge.</p>
-                            <p class="work-description">Users begin on a start screen, then move through one question and answer at a time. They must choose an answer from a selection of custom radio buttons before being allowed to move on and learn the correct answer. After each of their guesses is submitted, users immediately are shown if they got the question correct, the correct answer with an explanation, their current score, and current progress. Once the user has completed all the questions and determined the answer to the final question, they are taken to a final, summary page.</p>
-                            <p class="work-description">In addition, users experience some simple CSS animations that add to the enjoyment of the quiz.</p>
-                            <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
-                            </p>
-                            <p class="work-links">
-                                <a href="https://github.com/mteachey/quiz-app" target="_blank">Link to GitHub Repo : https://github.com/mteachey/quiz-app</a>
                                 <a href="https://mteachey.github.io/quiz-app/" target="_blank">Link to Live App : https://mteachey.github.io/quiz-app</a>
                             </p>
                         </div><!--end .work-example-->

@@ -46,7 +46,7 @@ function navScrollEffect() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 50) {
+        if (scroll >= 30) {
             header.removeClass('no-scroll-header').addClass('scroll-header');
         } else {
             header.removeClass("scroll-header").addClass('no-scroll-header');
