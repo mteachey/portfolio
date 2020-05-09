@@ -51,7 +51,16 @@ function navScrollEffect() {
         } else {
             header.removeClass("scroll-header").addClass('no-scroll-header');
         }
+        if (scroll >= 450) {
+            $(".blue-dots, .green-dots, .orange-dots").addClass('no-animation');
+        } else {
+            $(".blue-dots, .green-dots, .orange-dots").removeClass('no-animation')
+        }
+
     });
+
+    
+   
 }
 
 
