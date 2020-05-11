@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../style/main.css">
     </head>
 
     <body class="interior-page">       
@@ -20,65 +20,72 @@
                   </div>
                 <nav>
                     <ul class="nav">
-                        <li class="nav-link"><a href="#">home</a></li>
-                        <li class="nav-link"><a href="#about-page">about</a></li>                      
-                        <li class="nav-link"><a href="#work-page">work</a></li>
-                        <li class="nav-link"><a href="#blog-page">blog</a></li>
-                        <li class="nav-link"><a href="#contact-page">contact</a></li>
+                        <li class="nav-link"><a href="../index.html">home</a></li>
+                        <li class="nav-link"><a href="../index.html#about-page">about</a></li>                      
+                        <li class="nav-link"><a href="../index.html#work-page">work</a></li>
+                        <li class="nav-link"><a href="../index.html#blog-page">blog</a></li>
+                        <li class="nav-link"><a href="../index.html#contact-page">contact</a></li>
                     </ul>
                 </nav>                    
             </header>
             <main class="interior-page-main">
-                <section class="work-sample intro">
-                    <h1>Weekend Roulette</h1>
+                <h1>Weekend Roulette</h1>
+                <section class="work-sample work-sample-intro">
                     <div class="projectDescrip work-section">
+                        <h2>Description</h2>
                         <p>Weekend Roulette is app that allows users to leave the weekend decision making to the app. The app provides two day activities and two evening ones with the 'spin of a wheel' (click of a button). Give it a spin!</p>
+                        <a role="button" href="https://mteachey.github.io/weekend-roulette/" class="button">Live view</a>
                     </div>
-                    <div class="button-container live-view-button">
-                      <a role="button" href="https://mteachey.github.io/weekend-roulette/" class="button">Live view</a>
-                   </div>
+                   
     
                     <div class="project-role work-section">
                         <h2>My Role</h2>
+                        <ul class="role-list">
+                            <li class="role-item role-item-2-lines">Front-end Developer</li>
+                            <li class="role-item role-item-2">Designer</li>
+                            <li class="role-item role-item-3 role-item-2-lines">Product Developer</li>
+                        </ul>
                     </div>
-                    <div class="project-tech work-section">
+                </section>
+                <section class="work-sample">
+                    <div class="individual-work-sample-image-container">
+                        <img alt="screenshot of Weekend Roulette app home screen includes the title, background image of the close-up of a roulette wheel, and two buttons" src="../images/weekend-roulette-home-800x451.jpg"  class="individual-work-sample-image"/>
+                        <img alt="screenshot of Weekend Roulette app home screen includes the title, background image of the close-up of a roulette wheel, and two buttons" src="../images/weekend-roulette-location-800.jpg"  class="individual-work-sample-image"/>
+                        <img alt="screenshot of Weekend Roulette app home screen includes the title, background image of the close-up of a roulette wheel, and two buttons" src="../images/weekend-roulette-coordinates-800.jpg" class="individual-work-sample-image"/>
+                     </div>  
+                </section>    
+                    <section class="project-tech work-section">
                         <h2>Technologies Used</h2>
-                    </div>
-                        <div class="individual-work-sample-image-container">
-                            <img alt="screenshot of Weekend Roulette app home screen includes the title, background image of the close-up of a roulette wheel, and two buttons" src="../images/weekend-roulette-home-800x451.jpg"  class="individual-work-sample-image"/>
-                            <img alt="screenshot of Weekend Roulette app home screen includes the title, background image of the close-up of a roulette wheel, and two buttons" src="../images/weekend-roulette-location-800.jpg"  class="individual-work-sample-image"/>
-                            <img alt="screenshot of Weekend Roulette app home screen includes the title, background image of the close-up of a roulette wheel, and two buttons" src="../images/weekend-roulette-coordinates-800.jpg" class="individual-work-sample-image"/>
-                           
-                            <!--div class="project-testimonial">
-                                <blockquote>"Melinda has been such a pleasure to work with! From the first initial meeting, she gathered our ideas, hopes, and wishes for our website and she took that information and came up with a website that we love! She listened to our feedback and reworked some things until we were completely satisfied with the final product. She is very patient and always willing to help us understand things. She is very creative and so energetic about what she loves to do, which is hard to come by these days. Anytime we have had questions, she is always there to lend a hand and willing to fix the problem. If there has ever been a time where she needed to do some work on our site, she let us know beforehand and when she was done, just to keep us informed, which is very much appreciated! I would recommend Melinda to anyone wanting a creative, fun, and supportive web designer!"
-                                <cite>Mandy, owner of 50 Fifty the Art of Dessert</cite></blockquote>
-                            </div-->
+                        <ul class="tech-list">
+                            <li class="tech-item">HTML5</li>
+                            <li class="tech-item tech-item-2">CSS3</li>
+                            <li class="tech-item tech-item-3">JavaScript</li>
+                            <li class="tech-item tech-item-4">API</li>
+                            <li class="tech-item tech-item-3">AJAX</li>
+                            <li class="tech-item tech-item-2">jQuery</li>
+                        </ul>
+                    </section>
 
-                            <div class="project-process work-section">
-                                <h2>Process</h2>
-                                <p>Weekend Roulette is app that allows users to leave the weekend decision making to the app. The app provides two day activities and two evening ones with the 'spin of a wheel' (click of a button).</p>
-                        
-                                <p class="work-description">The app makes calls to four APIs - a hiking trail API, biking trail API, latitude/longitude API, and a restaurant API -  in order to obtain the activity selections for users.</p>
-                                <p class="work-description">Users experience some simple CSS animations that add to the enjoyment and experience of the app. </p>
-                                
-                                <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML, AJAX
-                                </p>
-                             </div>
-                             <div class="updates work-section">
-                                <h2>Future Versions</h2>
-                                <p class="work-description">Future versions of the app will add more APIs, such as “points of interest” from Google Maps and music from Bands in Town, to add more types of activities. In addition, future versions will include an improved restaurant API and using Google Geocaching for latitude and longitude.
-                                </p>
-                            </div>
-                            <div class="button-container">
-                                <a role="button" href="contact.php" class="button button1 bouncy contact-button-small-screens">Contact</a>
-                                <a role="button" href="#contact" class=" button button1 bouncy contact-button-large-screens">Contact</a>
-                            </div>
-                        
-                        <p class="work-links work-section">
-                            <a href="https://github.com/mteachey/weekend-roulette" target="_blank">Link to GitHub Repo : https://github.com/mteachey/weekend-roulette</a>
-                            <a href="https://mteachey.github.io/weekend-roulette/" target="_blank">Link to Live App : https://mteachey.github.io/weekend-roulette/</a>
-                        </p>
-                        <a href="https://mteachey.github.io/weekend-roulette/" target="_blank" class="button">Live App</a>
+                    <section class="process-future-work-sample">
+                        <div class="project-process work-section">
+                            <h2>Process</h2>
+                            <p>The app makes calls to four APIs - a hiking trail API, biking trail API, latitude/longitude API, and a restaurant API -  in order to obtain the activity selections for users.</p>
+                    
+                            <p class="work-description">The APIs being used are all free services so they all had some constraints to work with and around. All three activity APIs required latitude and longitude to be provided as a parameter rather than being able to use the name of a location - this required another API call. It was decided to have UIs with separate API calls - one that would return the coordinates and another that would return the results. Although, this does add in another form for users, it simplified the API calls and made it easier to determine if there was an error in user input or with the servers.</p>
+                            <p>The restaurant API could return hundreds of results for a location but it would only return 20 at a time and the range had to be specified in the call (i.e. 1-19 or 340-359). This posed a problem since ideally the restaurant options given to a user would be as random as possible among all the results possible - not just the first 20. I solved this by generating random numbers to enter as the parameter range before making the API call.</p>
+                            <p>Another problem that was solved through the course of development was the sequence of fetching the data and returning random activities depending on whether a user wanted biking and hiking, just one of those, or none of those.</p>
+                            <p class="work-description">While using the app, users experience some simple CSS animations that add to their enjoyment and experience of the app.</p>
+                        </div>
+                        <div class="updates work-section">
+                            <h2>Future Versions</h2>
+                            <p class="work-description">Future versions of the app will add more APIs, such as “points of interest” from Google Maps and music from Bands in Town, to add more types of activities. In addition, future versions will include an improved restaurant API and using Google Geocaching for latitude and longitude.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="work-section cta-buttons button-container">
+                        <a href="https://mteachey.github.io/weekend-roulette/" target="_blank" class="button bouncy">Live App</a>
+                        <a role="button" href="contact.php" class="button contact-button button1 bouncy contact-button-small-screens">Contact</a>
+                       <a href="https://github.com/mteachey/weekend-roulette" target="_blank" class="button bouncy">GitHub</a>                   
                 </section>
             </main>
             <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

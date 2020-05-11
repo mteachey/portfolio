@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="style/main.css">
 </head>
 
 <body>       
@@ -20,8 +20,8 @@
                   </div>
                 <nav>
                     <ul class="nav">
-                        <li class="nav-link"><a href="#">home</a></li>
-                        <li class="nav-link"><a href="#about-page">about</a></li>                      
+                        <li class="nav-link"><a href="/index.html">home</a></li>
+                        <li class="nav-link"><a href="file:///Users/bbelindi/Documents/Thinkful/practices/portfolio/index.html#about-page">about</a></li>                      
                         <li class="nav-link"><a href="#work-page">work</a></li>
                         <li class="nav-link"><a href="#blog-page">blog</a></li>
                         <li class="nav-link"><a href="#contact-page">contact</a></li>
@@ -39,17 +39,20 @@
                 <section id="about" aria-label="About Melinda">
                     <div class="about">
                         <h2>About</h2>
-                        <p>I am one of those rare, truly well-rounded, good-at-it all individuals. I am an experienced  front-end developer who loves getting knee-deep in code and coming up hours later. I have a knack for designing eye-loving layouts with an intuitive understanding of good user experience. On top of all of that, I am good at connecting and communicating with people....I have it all!</p>
+                        <p>I am one of those truly well-rounded, good-at-it all individuals. I am an experienced front-end developer who loves getting knee-deep in code and coming up hours later. I have a knack for designing eye-loving layouts with an intuitive understanding of good user experience. On top of all of that, I am good at connecting and communicating with people.</p>
 
-                        <p>I have been working as a developer, honing my skills for four years now. For two of those years, I was a website manager and developer for a high-paced marketing firm. I was their lead developer on several site refreshes and new sites and managed over 50 websites on various CMSs and platforms. Currently, I am a free-lancer, creating client-pleasing websites, applications, and experiences for clients.</p> 
+                        <p>I have been working as a developer, honing my skills for four years now. For two of those years, I was a website manager and developer for a high-paced marketing firm. I was their lead developer on several site refreshes and new sites and managed over 50 websites on various CMSs and platforms. I coordinated multiple projects with a wide range of tasks, constraints, and budgets. I was the key decision-maker on platform selection, hosting, security, and UX design for our clients and consulted directly with our clients on the best web-related products for their business and budgets.</p>
+
+                        <p>Currently, I am self-employed creating client-pleasing websites, applications, and experiences for clients while I add to my skill set to become a full-stack developer. I recently built a web app - weekend roulette - to help take the decision making out of your weekend. It uses several free APIs to help you plan your weekend.</p> 
                             
-                        <p>Before pursuing my love of code, I was a middle school science teacher and chemical engineering graduate from Virginia Tech. I have had the fortune to live and work in such amazing cities New York and Washington, D.C., as well as, small, mountain towns like Boone, NC. I currently call Denver, CO my home and love it! When I am not working with code, you can usually find me enjoying the outdoors with my dog and a pair of hiking shoes or a bike.
+                        <p>Before pursuing my love of code, I was a middle school science teacher and chemical engineering graduate from Virginia Tech. I have had the fortune to live and work in such amazing cities as New York and Washington, D.C., as well as, small, mountain towns like Boone, NC. I currently call Denver, CO my home and love it! When I am not working with code, you can usually find me enjoying the outdoors with my dog and a pair of hiking shoes or a bike.
                         </p>
+                        <a class="contact-button-about orange-button  blue-inside-button button solo-button desktop-display" href="#contact-page">Contact Me</a>
                     </div>
                     <div class="about" id="skills">
                         <h2>Skills</h2>
                         <ul>
-                            <li>HTML5, CSS3, JavaScript and JQuery, PHP, AJAX</li>
+                            <li>HTML5, CSS3, JavaScript, React, Express, PostgreSQL, SQL, Node, JQuery, PHP, AJAX</li>
                             <li>Website Management</li>
                             <li>Responsive and UX Design</li>
                             <li>Wordpress, Joomla, Shopify Development</li>
@@ -59,7 +62,7 @@
                             <li>...as well as many more depending on the project.</li>
                         </ul>
 
-                        <a class="contact-button-about orange-button  blue-inside-button button solo-button" href="#contact-page">Contact Me</a>
+                        <a class="contact-button-about orange-button  blue-inside-button button solo-button mobile-display" href="#contact-page">Contact Me</a>
                         <div class="marker" id="work-page"></div>
                     </div>  
                 
@@ -76,7 +79,7 @@
                     <div class="work-example-container container display__mobile">
                         <div class="work-example example-1 js-toggle__display">
                             <h3 class="work-title">Weekend Roulette</h3>
-                            <a target="_blank" href="file:///Users/bbelindi/Documents/Thinkful/practices/portfolio/my-work/app-weekendroulette.html">
+                            <a target="_blank" href="my-work/app-weekendroulette.html">
                                 <div class="work-image-container work-image-container-effect">
                                     <img alt="screenshot of Weekend Roulette app home screen includes the title, background image of the close-up of a roulette wheel, and two buttons" src="images/weekend-roulette-home-800x600.jpg" />
                                     <div class="work-image-mask">
@@ -87,28 +90,17 @@
                                       
                                     </div>
                                 </div>
-                            </a>
-                            
-                            <p class="work-description">The app makes calls to four APIs - a hiking trail API, biking trail API, latitude/longitude API, and a restaurant API -  in order to obtain the activity selections for users.</p>
-                            <p class="work-description">Users experience some simple CSS animations that add to the enjoyment and experience of the app. </p>
-                            <p class="work-description">Future versions of the app will add more APIs, such as “points of interest” from Google Maps and music from Bands in Town, to add more types of activities. In addition, future versions will include an improved restaurant API and using Google Geocaching for latitude and longitude.
-                            </p>
-                            <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML, AJAX
-                            </p>
-                            <p class="work-links">
-                                <a href="https://github.com/mteachey/weekend-roulette" target="_blank">Link to GitHub Repo : https://github.com/mteachey/weekend-roulette</a>
-                                <a href="https://mteachey.github.io/weekend-roulette/" target="_blank">Link to Live App : https://mteachey.github.io/weekend-roulette/</a>
-                            </p>
+                            </a>                            
                         </div><!--end .work-example-->
                         
                         <div class="work-example example-2">
                             <h3 class="work-title">Potash America</h3>
-                            <a target="_blank" href="http://paintedskycreative.com/">
+                            <a target="_blank" href="my-work/potash.html">
                                 <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of Are You a Yogi app start screen includes the title, image of a yogi, begin button, initial question progress and score" src="images/potash-keysectors-800x600.jpg" />
+                                    <img alt="screenshot of the key sectors page for the Potash America site" src="images/potash-keysectors-800x600.jpg" />
                                     <div class="work-image-mask">
                                         <h3>Potash America</h3>
-                                        <p class="work-description">Potash America is a custom Wordpress site.</p>
+                                        <p class="work-description">Potash America is a custom developed Wordpress site.</p>
                                         <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
                                         </p>
                                         <p class="fake-button">Learn More</p>
@@ -116,91 +108,66 @@
                                     </div>
                                 </div>
                             </a>                          
-                            <p class="work-description">Visitors can view work samples and read about available services with call to actions on every page. </p>
-                            <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
-                            </p>
-                            <p class="work-links">
-                                <a href="http://paintedskycreative.com/" target="_blank">Link to Live Site : http://paintedskycreative.com/</a>
-                            </p>
                         </div><!--end .work-example-->
 
                         <div class="work-example example-3">
                             <h3 class="work-title">Aggregate Materials</h3>
-                            <a target="_blank" href="http://paintedskycreative.com/">
+                            <a target="_blank" href="my-work/aggregate.html">
                                 <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of Are You a Yogi app start screen includes the title, image of a yogi, begin button, initial question progress and score" src="images/aggregate-wwd-800x600.jpg" />
+                                    <img alt="screenshot of an interior page on the Aggregate Materials site" src="images/aggregate-wwd-800x600.jpg" />
                                     <div class="work-image-mask">
-                                        <h3>Painted Sky Creative</h3>
-                                        <p class="work-description">Painted Sky Creative is a website for a freelance consulting business.</p>
-                                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
+                                        <h3>Aggregate Materials</h3>
+                                        <p class="work-description">Aggregate Materials is a custom developed Wordpress site for a large, international aggregate company</p>
+                                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML, API, AJAX
                                         </p>
-                                        <p class="fake-button">Learn More</p>
-                                      
+                                        <p class="fake-button">Learn More</p>                                     
                                     </div>
                                 </div>
                             </a>                          
-                            <p class="work-description">Visitors can view work samples and read about available services with call to actions on every page. </p>
-                            <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
-                            </p>
-                            <p class="work-links">
-                                <a href="http://paintedskycreative.com/" target="_blank">Link to Live Site : http://paintedskycreative.com/</a>
-                            </p>
                         </div><!--end .work-example-->
 
                         <div class="work-example example-4">
-                            <h3 class="work-title">Mountz Jewelry</h3>
-                            <a target="_blank" href="http://paintedskycreative.com/">
+                            <h3 class="work-title">Mountz Jewelers</h3>
+                            <a target="_blank" href="my-work/mountz.html">
                                 <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of Are You a Yogi app start screen includes the title, image of a yogi, begin button, initial question progress and score" src="images/mountz-home-800x600.jpg" />
+                                    <img alt="screenshot of the home page of the Mountz Jewelers site" src="images/mountz-home-800x600.jpg" />
                                     <div class="work-image-mask">
-                                        <h3>Painted Sky Creative</h3>
-                                        <p class="work-description">Painted Sky Creative is a website for a freelance consulting business.</p>
-                                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
+                                        <h3>Mountz Jewelers</h3>
+                                        <p class="work-description">Mountz Jewelers is a custom developed Shopify site for a multi-store jewelry business.</p>
+                                        <p class="work-technologies"><span>Technologies used :</span> Sass, Liquid, jQuery, JavaScript, CSS, HTML, 
                                         </p>
                                         <p class="fake-button">Learn More</p>
                                       
                                     </div>
                                 </div>
                             </a>                          
-                            <p class="work-description">Visitors can view work samples and read about available services with call to actions on every page. </p>
-                            <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
-                            </p>
-                            <p class="work-links">
-                                <a href="http://paintedskycreative.com/" target="_blank">Link to Live Site : http://paintedskycreative.com/</a>
-                            </p>
                         </div><!--end .work-example-->
 
                         <div class="work-example example-5">
-                            <h3 class="work-title">50 Fifty - the art of dessert</h3>
-                            <a target="_blank" href="http://paintedskycreative.com/">
+                            <h3 class="work-title">50 Fifty - the Art of Dessert</h3>
+                            <a target="_blank" href="my-work/50fifty.html">
                                 <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of Are You a Yogi app start screen includes the title, image of a yogi, begin button, initial question progress and score" src="images/50fifty-home-800x600.jpg" />
+                                    <img alt="screenshot of the home page of the 50 Fifty website" src="images/50fifty-home-800x600.jpg" />
                                     <div class="work-image-mask">
-                                        <h3>Painted Sky Creative</h3>
-                                        <p class="work-description">Painted Sky Creative is a website for a freelance consulting business.</p>
-                                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
+                                        <h3>50 Fifty - the Art of Dessert</h3>
+                                        <p class="work-description">50 Fifty is a custom developed Joomla website for a local dessert business</p>
+                                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML, Joomla
                                         </p>
                                         <p class="fake-button">Learn More</p>
                                       
                                     </div>
                                 </div>
                             </a>                          
-                            <p class="work-description">Visitors can view work samples and read about available services with call to actions on every page. </p>
-                            <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
-                            </p>
-                            <p class="work-links">
-                                <a href="http://paintedskycreative.com/" target="_blank">Link to Live Site : http://paintedskycreative.com/</a>
-                            </p>
                         </div><!--end .work-example-->
 
                         <div class="work-example example-6">
                             <h3 class="work-title">Painted Sky Creative</h3>
-                            <a target="_blank" href="http://paintedskycreative.com/">
+                            <a target="_blank" href="my-work/psc.html">
                                 <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of Are You a Yogi app start screen includes the title, image of a yogi, begin button, initial question progress and score" src="images/psc-home-800x600.jpg" />
+                                    <img alt="screenshot of the home page of the Painted Sky Creative website" src="images/psc-home-800x600.jpg" />
                                     <div class="work-image-mask">
                                         <h3>Painted Sky Creative</h3>
-                                        <p class="work-description">Painted Sky Creative is a website for a freelance consulting business.</p>
+                                        <p class="work-description">Painted Sky Creative is custom website for a freelance consulting business.</p>
                                         <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
                                         </p>
                                         <p class="fake-button">Learn More</p>
@@ -208,28 +175,37 @@
                                     </div>
                                 </div>
                             </a>                          
-                            <p class="work-description">Visitors can view work samples and read about available services with call to actions on every page. </p>
-                            <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
-                            </p>
-                            <p class="work-links">
-                                <a href="http://paintedskycreative.com/" target="_blank">Link to Live Site : http://paintedskycreative.com/</a>
-                            </p>
                         </div><!--end .work-example-->
-                        
+
                         <div class="work-example example-7">
-                            <h3 class="work-title">Are you a Yogi</h3>
-                            <div class="image-wrapper"><a target="_blank" href="https://mteachey.github.io/quiz-app/"><img src="images/screenshots/yogi-start-700x470.jpg" alt="screenshot of Are You a Yogi app start screen includes the title, image of a yogi, begin button, initial question progress and score" /></a></div>
-                            <p class="work-description">Are You a Yogi is a clean, user-friendly, fun app that allows users to move through a set of 10 questions (more could be easily added) to test their yoga knowledge.</p>
-                            <p class="work-description">Users begin on a start screen, then move through one question and answer at a time. They must choose an answer from a selection of custom radio buttons before being allowed to move on and learn the correct answer. After each of their guesses is submitted, users immediately are shown if they got the question correct, the correct answer with an explanation, their current score, and current progress. Once the user has completed all the questions and determined the answer to the final question, they are taken to a final, summary page.</p>
-                            <p class="work-description">In addition, users experience some simple CSS animations that add to the enjoyment of the quiz.</p>
-                            <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
-                            </p>
-                            <p class="work-links">
-                            <a href="https://github.com/mteachey/quiz-app" target="_blank">Link to GitHub Repo : https://github.com/mteachey/quiz-app</a>
-                                <a href="https://mteachey.github.io/quiz-app/" target="_blank">Link to Live App : https://mteachey.github.io/quiz-app</a>
-                            </p>
+                            <h3 class="work-title">Noteful</h3>
+                            <a target="_blank" href="my-work/noteful.html">
+                                <div class="work-image-container work-image-container-effect">
+                                    <img alt="screenshot of the home page of the Painted Sky Creative website" src="images/psc-home-800x600.jpg" />
+                                    <div class="work-image-mask">
+                                        <h3>Noteful</h3>
+                                        <p class="work-description">Noteful is minimally styled full-stack note saving app. The client-side app was built with React and the server-side app was built using Express and PostgreSQL.</p>                         
+                                        <p class="work-technologies"><span>Technologies used :</span> React, Express, PostgreSQL, SQL, jQuery, JavaScript, CSS, HTML</p>                           
+                                        <p class="fake-button">Learn More</p>
+                                    </div>
+                                </div>
+                            </a>            
                         </div><!--end .work-example-->
-                                    
+                        <div class="work-example example-8">
+                            <h3 class="work-title">Are you a Yogi</h3>
+                            <a target="_blank" href="my work/yogi.html">
+                                <div class="work-image-container work-image-container-effect">
+                                    <img src="images/screenshots/yogi-start-700x470.jpg" alt="screenshot of Are You a Yogi app start screen includes the title, image of a yogi, begin button, initial question progress and score" />
+                                    <div class="work-image-mask">
+                                        <h3>Are you a Yogi</h3>
+                                        <p class="work-description">Are You a Yogi is a clean, user-friendly, fun app that allows users to move through a set of 10 questions (more could be easily added) to test their yoga knowledge.</p>                         
+                                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
+                                       </p>                        
+                                        <p class="fake-button">Learn More</p>
+                                    </div>
+                                </div>
+                            </a>            
+                        </div><!--end .work-example-->              
                     </div><!--end .work-example-container-->
                     <div class="marker" id="blog-page"></div>
                 </section>  
@@ -6057,6 +6033,6 @@
         </div>
      
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="index.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
