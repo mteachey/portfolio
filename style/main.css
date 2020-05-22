@@ -59,13 +59,18 @@ header{
     height: 55px;
 }
 
-
+/*next three classes need to be in this order*/
 .no-scroll-header{
     background-color: white;
 }
 
 .scroll-header{
     background-color: white;
+}
+
+.blue-white-header {
+    background-color: #00003D;
+    color:#fff;
 }
 
 nav{
@@ -141,14 +146,16 @@ li{
     top: 10px;
     z-index:100;
   }
+
+
   
-  .bar1, .bar2, .bar3 {
+.bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
     background-color:  #460a86  ;
     margin: 6px 0;
     transition: 0.4s;
-  }
+}
 
 .bar2{
     background-color:#00003d;
@@ -156,6 +163,18 @@ li{
 
 .bar3{
     background-color:#007900;
+}
+
+.blue-white-header .bar1, .blue-white-header .bar2, .blue-white-header .bar3 {
+    background-color: #fff22d ;
+}
+
+.blue-white-header .bar2{
+    background-color:#fff;
+}
+
+.blue-white-header .bar3{
+    background-color:#ee710c;
 }
 
 /* Rotate first bar */
@@ -186,7 +205,7 @@ section {
 }
 
 .interior-page section{
-    padding:30px 10px;
+    padding:25px 10px;
 }
 
 #about{
@@ -220,7 +239,7 @@ h1{
 
 h2{
     margin: 0;
-    text-align:left;
+    text-align:center;
     font-size:20px;
 }
 
@@ -277,23 +296,38 @@ h2{
     color:#fff;
 }
 
-
-.mobile-buttons {
-    display: flex;
-    justify-content: space-around;
-    margin: 30px auto;
-    margin-bottom: 60px;
-}
-
 .button, button{
     margin:auto;
+    margin-bottom:10px;
     padding: 10px;
     border: 1px solid #007900;
-    width: 100px;
+    width: 120px;
     background-color: #fff;
     display:block;
     font-size:18px;
     text-align:center;
+}
+
+.button-wider{
+    width:150px;
+    margin: 10px;
+}
+
+.mobile-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    margin: 30px auto;
+    margin-bottom: 60px; 
+}
+
+.mobile-buttons button{
+    padding: 7px 10px;
+}
+
+.button.button-active{
+    background-color: #007900;
+    color:#fff
 }
 
 .solo-button{
@@ -309,6 +343,10 @@ h2{
     color:#fff;
 }
 
+.blue-button{
+    border: 1px solid #00003d;
+}
+
 .purple-button{
     border: 1px solid #460a86;
 }
@@ -321,6 +359,44 @@ h2{
     color:#00003d;
 }
 
+.purple-button:focus {
+    outline: #460a86 5px auto;
+}
+
+.orange-button:focus{
+    outline: #d5652c 5px auto; 
+}
+
+.green-button:focus {
+    outline: #007900 5px auto;
+}
+
+.blue-button:focus {
+    outline: #00003d 5px auto;
+}
+
+.green-button.button-active {
+    border: 1px solid #007900;
+    background-color: #007900;
+    color:#fff;
+}
+
+.blue-button.button-active{
+    border: 1px solid #00003d;
+    background-color: #00003d;
+    color:#fff;
+}
+
+.purple-button.button-active{
+    border: 1px solid #460a86;
+    background-color: #460a86;
+    color:#fff;
+}
+.orange-button.button-active{
+    border: 1px solid #d5652c;
+    background-color: #d5652c;
+    color:#fff;
+}
 
 .work-image {
     max-width: 300px;
@@ -374,8 +450,24 @@ h2{
 }
 
 .work-example{
-    /*display: none;*/
-    margin-top: 30px;
+    display: none;
+    margin-top: 60px;
+    position:relative;   
+}
+
+.mobile-fake-button {
+    display: block;
+    text-decoration: none;
+    padding: 6px;
+    background-color: #460a86;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    width: 115px;
+    margin:auto;
+    margin-top:10px;
+    font-size: 14px;
+    text-align: center;
 }
 
 .work-links a {
@@ -388,39 +480,6 @@ h2{
 
 .js-toggle__display{
     display: block;
-}
-
-.mobile-buttons :focus{
-
-}
-
-.purple-button:focus {
-    outline: #460a86 5px auto;
-}
-
-.orange-button:focus{
-    outline: #d5652c 5px auto; 
-}
-
-.green-button:focus {
-    outline: #007900 5px auto;
-}
-
-.green-button.button-active {
-    border: 1px solid #007900;
-    background-color: #007900;
-    color:#fff;
-}
-
-.purple-button.button-active{
-    border: 1px solid #460a86;
-    background-color: #460a86;
-    color:#fff;
-}
-.orange-button.button-active{
-    border: 1px solid #d5652c;
-    background-color: #d5652c;
-    color:#fff;
 }
 
 .marker {
@@ -439,7 +498,7 @@ h2{
 .work-image-container {
     width: 300px;
     height: 225px;
-    margin: 0px;
+    margin: 0px auto;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -464,7 +523,7 @@ h2{
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 17px;
+    font-size: 15px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.8);
     margin: 20px 0 0 0
@@ -478,19 +537,16 @@ h2{
     margin-block-start: 0;
     margin-block-end: 0;
 }
-.work-image-container .fake-button {
+.work-image-container .fake-button{
     display: inline-block;
-    text-decoration: none;
     padding: 7px 14px;
     background: #d5652c;
     color: #fff;
     text-transform: uppercase;
     box-shadow: 0 0 1px #000;
-    width: 150px;
+    width: 165px;
 }
-.work-image-container a.info:hover {
-    box-shadow: 0 0 5px #000
-}
+
 
 .work-image-container-effect img { 
 	transform: scaleY(1);
@@ -505,10 +561,11 @@ h2{
     justify-content: center;
     align-items:center;
 }	
+
 .work-image-container-effect h3{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #fff;
     background: transparent;
-    margin: 20px 40px 0px 40px;
+    margin: 20px 0px 0px 0px;
     transform: scale(0);
     color: #fff;
     transition: all 1s linear;
@@ -526,26 +583,9 @@ h2{
     transition: all 1s linear;
 }
 
-.work-image-container-effect:hover img { 
-/*	transform: scale(10);*/
-    opacity: 0;
-}
-.work-image-container-effect:hover .work-image-mask { 
-    opacity: 1;
-    cursor: pointer;
-}																			 
-.work-image-container-effect:hover h3,
-.work-image-container-effect:hover p,
-.work-image-container-effect:hover a.info{ 
-    transform: scale(1);
-    opacity: 1;
-}
-
 #contact{
     padding-bottom:0;
 }
-
-
 
 /*****interior pages***/
 .work-section{
@@ -571,6 +611,11 @@ h2{
     display: block;
     margin: auto;
     margin-top: 1em;
+    
+}
+
+.individual-work-sample-image-border{
+    border:.75px solid #00003d;
 }
 
 .work-sample-intro{
@@ -583,11 +628,12 @@ h2{
     flex-direction:column;
 }
 
-.cta-buttons{
+section.cta-buttons{
     display:flex;
     flex-wrap:wrap;
     justify-content: space-around;
     max-width:500px;
+    padding-top:0;
 }
 
 .cta-buttons .button:hover{
@@ -642,16 +688,18 @@ h2{
 } 
 
 /***My Role and Technology Buttons****/
-.tech-list{
+.role-list, .tech-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .role-item, .tech-item {
     border-bottom: 2px solid #d5652c;
     border-color:#d5652c;
    /* background-color:#d5652c;*/
-    width: 150px;
+    width: 145px;
     height: 45px;
     line-height: 42px;
     vertical-align: middle;
@@ -775,6 +823,19 @@ h2{
     height:375px;
 }
 
+.work-image-container {
+    width: 450px;
+    height: 337.5px;
+ }
+.work-image-container .work-image-mask, .work-image-container .content {
+    width: 450px;
+    height: 337.5px;
+
+}
+.work-image-container img {
+    width:450px;
+}
+
 .work-image {
     max-height: 350px;
     max-width: none;
@@ -795,13 +856,16 @@ body {
     font-size: 14px;
 }
 
-.blue-white-header.no-scroll-header{
-    background-color: #00003D;
-    color:#fff;
+.bar1, .bar2, .bar3 {
+    background-color:  #460a86  ;
+  }
+
+.bar2{
+    background-color:#00003d;
 }
 
-.blue-white-header a{
-    color:#fff;
+.bar3{
+    background-color:#007900;
 }
 
 .nav-link a {
@@ -829,6 +893,19 @@ body {
     padding: 20px 25px;
 }
 
+.work-image-container {
+    width: 600px;
+    height: 450px;
+ }
+.work-image-container .work-image-mask, .work-image-container .content {
+    width: 600px;
+    height: 450px;
+
+}
+.work-image-container img {
+    width:600px;
+}
+
 .work-sample-intro{
     flex-direction:row;
     justify-content: space-around;
@@ -848,12 +925,10 @@ body {
 }
 
 .interior-page h1 {
-    text-align: left;
     font-size:24px;
 }
 
 .interior-page h2 {
-    text-align: left;
     font-size:19px;
 }
 
@@ -908,6 +983,15 @@ header{
     box-shadow: 0px 1px 2px 0px rgba(0,0,0,.25);
 }
 
+.blue-white-header{
+    background-color: #00003D;
+    color:#fff;
+}
+
+.blue-white-header a{
+    color:#fff;
+}
+
 
 .clearHeader.darkHeader {
 background:#000;
@@ -930,6 +1014,9 @@ background:#000;
 
 .desktop-display{
     display:block;
+}
+.interior-page h2 {
+    text-align: center;
 }
 
 .home-page {
@@ -980,10 +1067,6 @@ background:#000;
     position:relative;
 }
 
-.mobile-buttons{
-    display:none;
-}
-
 .container {
     display: flex;
     justify-content: space-around;
@@ -992,11 +1075,48 @@ background:#000;
 
 .work-example{
     width: 640px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 3em;
     margin-top: 3em;
+}
+
+.work-example.js-toggle__display{
+   display:flex;
+}
+
+.projectDescrip {
+    max-width: 425px;
+}
+
+.role-list, .tech-list{
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+/**hover effects for work examples on laptop and bigger devices*/
+.mobile-fake-button{
+    display:none;
+}
+
+.work-image-container a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+.work-image-container-effect:hover img { 
+/*	transform: scale(10);*/
+    opacity: 0;
+}
+.work-image-container-effect:hover .work-image-mask { 
+    opacity: 1;
+    cursor: pointer;
+}																			 
+.work-image-container-effect:hover h3,
+.work-image-container-effect:hover p,
+.work-image-container-effect:hover a.info{ 
+    transform: scale(1);
+    opacity: 1;
 }
 
 h3{
@@ -1006,7 +1126,7 @@ h3{
 footer {
     display: flex;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
     justify-content: space-between;
 }
 
@@ -1041,6 +1161,13 @@ footer {
     margin-top: 1em;
 }
 
+.work-image-container-effect h3{
+    margin: 20px 40px 0px 40px;
+}
+
+.work-image-container h3{
+    font-size:17px
+}
 
 }/*end MQ 960*/
 
@@ -1048,6 +1175,20 @@ footer {
 #about {
     min-height: 725px;
 }
+
+.interior-page h2 {
+    text-align: left;
+}
+
+.projectDescrip {
+    max-width: 500px;
+}
+
+.project-role {
+    width: 475px;
+}
+
+
 }
 
 /******background-animation*******/
@@ -1087,7 +1228,7 @@ svg#Layer_1 {
 animation-name: opacity;
 /*animation-duration: 10s;*/
 animation-duration: 10s;
-animation-iteration-count: 3;
+animation-iteration-count: 1;
 }
 
 

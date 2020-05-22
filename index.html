@@ -23,7 +23,7 @@
                         <li class="nav-link"><a href="/index.html">home</a></li>
                         <li class="nav-link"><a href="file:///Users/bbelindi/Documents/Thinkful/practices/portfolio/index.html#about-page">about</a></li>                      
                         <li class="nav-link"><a href="#work-page">work</a></li>
-                        <li class="nav-link"><a href="#blog-page">blog</a></li>
+                        <!--li class="nav-link"><a href="#blog-page">blog</a></li-->
                         <li class="nav-link"><a href="#contact-page">contact</a></li>
                     </ul>
                 </nav>                    
@@ -47,7 +47,7 @@
                             
                         <p>Before pursuing my love of code, I was a middle school science teacher and chemical engineering graduate from Virginia Tech. I have had the fortune to live and work in such amazing cities as New York and Washington, D.C., as well as, small, mountain towns like Boone, NC. I currently call Denver, CO my home and love it! When I am not working with code, you can usually find me enjoying the outdoors with my dog and a pair of hiking shoes or a bike.
                         </p>
-                        <a class="contact-button-about orange-button  blue-inside-button button solo-button desktop-display" href="#contact-page">Contact Me</a>
+                        <a class="contact-button-about orange-button bouncy blue-inside-button button solo-button desktop-display" href="#contact-page">Contact Me</a>
                     </div>
                     <div class="about" id="skills">
                         <h2>Skills</h2>
@@ -71,15 +71,16 @@
                 <section id="work" aria-label="Melinda's work samples">
                     <h2 class="center-align">My Work</h2>
                     <div class="mobile-buttons js-toggle-display__mobile">
-                        <button class="green-button js-toggle__mobile-button-work js-toggle__mobile-button-work-1 button-active">Javascript</button>
-                        <button class="purple-button js-toggle__mobile-button-work js-toggle__mobile-button-work-2">Websites</button>
-                        <button class="orange-button js-toggle__mobile-button-work js-toggle__mobile-button-work-3">React</button>
+                        <button class="blue-button js-toggle__mobile-button-work js-toggle__mobile-button-work-all button-active">All</button>
+                        <button class="green-button js-toggle__mobile-button-work js-toggle__mobile-button-work-apps">Apps</button>
+                        <button class="purple-button js-toggle__mobile-button-work js-toggle__mobile-button-work-websites">Websites</button>
+                        <button class="orange-button js-toggle__mobile-button-work js-toggle__mobile-button-work-react">React Apps</button>
                     </div>
                    
                     <div class="work-example-container container display__mobile">
-                        <div class="work-example example-1 js-toggle__display">
+                        <div class="work-example example-1 js-toggle__display js-type-app">
                             <h3 class="work-title">Weekend Roulette</h3>
-                            <a target="_blank" href="my-work/app-weekendroulette.html">
+                            <a  href="my-work/app-weekendroulette.html">
                                 <div class="work-image-container work-image-container-effect">
                                     <img alt="screenshot of Weekend Roulette app home screen includes the title, background image of the close-up of a roulette wheel, and two buttons" src="images/weekend-roulette-home-800x600.jpg" />
                                     <div class="work-image-mask">
@@ -89,30 +90,48 @@
                                         <p class="fake-button">Learn More</p>
                                       
                                     </div>
-                                </div>
-                            </a>                            
-                        </div><!--end .work-example-->
+                                </div>  
+                            </a>
+                            <a  href="my-work/app-weekendroulette.html" class="fake-button mobile-fake-button">Learn More</a>                       
+                        </div></a><!--end .work-example-->
                         
-                        <div class="work-example example-2">
+                        <div class="work-example example-2 js-toggle__display js-type-website">
                             <h3 class="work-title">Potash America</h3>
-                            <a target="_blank" href="my-work/potash.html">
+                            <a  href="my-work/potash.html">
                                 <div class="work-image-container work-image-container-effect">
                                     <img alt="screenshot of the key sectors page for the Potash America site" src="images/potash-keysectors-800x600.jpg" />
                                     <div class="work-image-mask">
                                         <h3>Potash America</h3>
-                                        <p class="work-description">Potash America is a custom developed Wordpress site.</p>
+                                        <p class="work-description">Potash American is a custom developed Wordpress site to meet the needs of a new multi-staged investment group.</p>
                                         <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
                                         </p>
                                         <p class="fake-button">Learn More</p>
                                       
                                     </div>
                                 </div>
-                            </a>                          
+                            </a>     
+                            <a  href="my-work/potash.html" class="fake-button mobile-fake-button">Learn More</a>                         
                         </div><!--end .work-example-->
 
-                        <div class="work-example example-3">
+                        <div class="work-example example-7 js-toggle__display js-type-app js-type-full-stack js-type-react js-type-express js-type-postgres">
+                            <h3 class="work-title">Noteful</h3>
+                            <a  href="my-work/app-noteful.html">
+                                <div class="work-image-container work-image-container-effect">
+                                    <img alt="screenshot of the home screen of the Noteful app" src="images/noteful-home-800x600.jpg" />
+                                    <div class="work-image-mask">
+                                        <h3>Noteful</h3>
+                                        <p class="work-description">Noteful is minimally styled full-stack application to save and organize notes. The client-side app was built with React and the server-side app was built using Express and PostgreSQL.</p>                         
+                                        <p class="work-technologies"><span>Technologies used :</span> React, Express, PostgreSQL, SQL, Node, jQuery, JavaScript, CSS, HTML</p>                           
+                                        <p class="fake-button">Learn More</p>
+                                    </div>
+                                </div>
+                            </a>    
+                            <a  href="my-work/app-noteful.html" class="fake-button mobile-fake-button">Learn More</a>            
+                        </div><!--end .work-example-->
+
+                        <div class="work-example example-3 js-toggle__display js-type-website">
                             <h3 class="work-title">Aggregate Materials</h3>
-                            <a target="_blank" href="my-work/aggregate.html">
+                            <a  href="my-work/aggregate.html">
                                 <div class="work-image-container work-image-container-effect">
                                     <img alt="screenshot of an interior page on the Aggregate Materials site" src="images/aggregate-wwd-800x600.jpg" />
                                     <div class="work-image-mask">
@@ -123,46 +142,49 @@
                                         <p class="fake-button">Learn More</p>                                     
                                     </div>
                                 </div>
-                            </a>                          
+                            </a>    
+                            <a  href="my-work/aggregate.html" class="fake-button mobile-fake-button">Learn More</a>                          
                         </div><!--end .work-example-->
 
-                        <div class="work-example example-4">
-                            <h3 class="work-title">Mountz Jewelers</h3>
-                            <a target="_blank" href="my-work/mountz.html">
-                                <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of the home page of the Mountz Jewelers site" src="images/mountz-home-800x600.jpg" />
-                                    <div class="work-image-mask">
-                                        <h3>Mountz Jewelers</h3>
-                                        <p class="work-description">Mountz Jewelers is a custom developed Shopify site for a multi-store jewelry business.</p>
-                                        <p class="work-technologies"><span>Technologies used :</span> Sass, Liquid, jQuery, JavaScript, CSS, HTML, 
-                                        </p>
-                                        <p class="fake-button">Learn More</p>
-                                      
-                                    </div>
-                                </div>
-                            </a>                          
-                        </div><!--end .work-example-->
-
-                        <div class="work-example example-5">
+                        <div class="work-example example-5 js-toggle__display js-type-website">
                             <h3 class="work-title">50 Fifty - the Art of Dessert</h3>
-                            <a target="_blank" href="my-work/50fifty.html">
+                            <a  href="my-work/50fifty.html">
                                 <div class="work-image-container work-image-container-effect">
                                     <img alt="screenshot of the home page of the 50 Fifty website" src="images/50fifty-home-800x600.jpg" />
                                     <div class="work-image-mask">
                                         <h3>50 Fifty - the Art of Dessert</h3>
-                                        <p class="work-description">50 Fifty is a custom developed Joomla website for a local dessert business</p>
+                                        <p class="work-description">50 Fifty is a custom developed Joomla website for a small, specialty dessert business.</p>
                                         <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML, Joomla
                                         </p>
                                         <p class="fake-button">Learn More</p>
                                       
                                     </div>
                                 </div>
-                            </a>                          
+                            </a>      
+                            <a  href="my-work/50fifty.html" class="fake-button mobile-fake-button">Learn More</a>                        
                         </div><!--end .work-example-->
 
-                        <div class="work-example example-6">
+                        <div class="work-example example-4 js-toggle__display js-type-website">
+                            <h3 class="work-title">Mountz Jewelers</h3>
+                            <a  href="my-work/mountz.html">
+                                <div class="work-image-container work-image-container-effect">
+                                    <img alt="screenshot of the home page of the Mountz Jewelers site" src="images/mountz-home-800x600.jpg" />
+                                    <div class="work-image-mask">
+                                        <h3>Mountz Jewelers</h3>
+                                        <p class="work-description">Mountz Jewelers is a custom developed eCommerce Shopify site for a medium-size jewelry business.</p>
+                                        <p class="work-technologies"><span>Technologies used :</span> Sass, Liquid, jQuery, JavaScript, CSS, HTML, 
+                                        </p>
+                                        <p class="fake-button">Learn More</p>
+                                      
+                                    </div>
+                                </div>
+                            </a>    
+                            <a  href="my-work/mountz.html" class="fake-button mobile-fake-button">Learn More</a>                          
+                        </div><!--end .work-example-->
+
+                        <div class="work-example example-6 js-toggle__display js-type-website">
                             <h3 class="work-title">Painted Sky Creative</h3>
-                            <a target="_blank" href="my-work/psc.html">
+                            <a  href="my-work/psc.html">
                                 <div class="work-image-container work-image-container-effect">
                                     <img alt="screenshot of the home page of the Painted Sky Creative website" src="images/psc-home-800x600.jpg" />
                                     <div class="work-image-mask">
@@ -174,26 +196,14 @@
                                       
                                     </div>
                                 </div>
-                            </a>                          
+                            </a>       
+                            <a  href="my-work/psc.html" class="fake-button mobile-fake-button">Learn More</a>                       
                         </div><!--end .work-example-->
 
-                        <div class="work-example example-7">
-                            <h3 class="work-title">Noteful</h3>
-                            <a target="_blank" href="my-work/noteful.html">
-                                <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of the home page of the Painted Sky Creative website" src="images/psc-home-800x600.jpg" />
-                                    <div class="work-image-mask">
-                                        <h3>Noteful</h3>
-                                        <p class="work-description">Noteful is minimally styled full-stack note saving app. The client-side app was built with React and the server-side app was built using Express and PostgreSQL.</p>                         
-                                        <p class="work-technologies"><span>Technologies used :</span> React, Express, PostgreSQL, SQL, jQuery, JavaScript, CSS, HTML</p>                           
-                                        <p class="fake-button">Learn More</p>
-                                    </div>
-                                </div>
-                            </a>            
-                        </div><!--end .work-example-->
-                        <div class="work-example example-8">
+                        
+                        <div class="work-example example-8 js-toggle__display js-type-app">
                             <h3 class="work-title">Are you a Yogi</h3>
-                            <a target="_blank" href="my work/yogi.html">
+                            <a  href="my work/yogi.html">
                                 <div class="work-image-container work-image-container-effect">
                                     <img src="images/screenshots/yogi-start-700x470.jpg" alt="screenshot of Are You a Yogi app start screen includes the title, image of a yogi, begin button, initial question progress and score" />
                                     <div class="work-image-mask">
@@ -204,12 +214,13 @@
                                         <p class="fake-button">Learn More</p>
                                     </div>
                                 </div>
-                            </a>            
+                            </a>      
+                            <a  href="my work/yogi.html" class="fake-button mobile-fake-button">Learn More</a>          
                         </div><!--end .work-example-->              
                     </div><!--end .work-example-container-->
                     <div class="marker" id="blog-page"></div>
                 </section>  
-                <section id="blog">
+                <!--section id="blog">
                     <h2>Blog</h2>
                     <div class="container">
                         <div class="blog-thumbnail">
@@ -224,7 +235,7 @@
                     </div>
                     <a class="white-link"  href="">More posts...This will link to a blog landing page</a>
                     <div class="marker" id="contact-page"></div>
-                </section> 
+                </section--> 
                 <section id="contact">
                     <h2 class="center-align">Contact</h2>
                     <form class="contact-form"></form>

@@ -29,12 +29,12 @@
                 </nav>                    
             </header>
             <main class="interior-page-main">
-                <h1>Mountz Jewelers</h1>
+                <h1>Noteful</h1>
                 <section class="work-sample work-sample-intro">
                     <div class="projectDescrip work-section">
                         <h2>Description</h2>
-                        <p>Mountz Jewelers is a custom developed eCommerce Shopify site for a medium-size jewelry business.</p>
-                        <a role="button" href="https://mteachey.github.io/weekend-roulette/" class="button">Live view</a>
+                        <p>Noteful is minimally styled full-stack application to save and organize notes. The client-side app was built with React and the server-side app was built using Express and PostgreSQL.</p>
+                        <a role="button" href="https://noteful-app-bice.now.sh" class="button">Live view</a>
                     </div>
                    
     
@@ -42,43 +42,50 @@
                         <h2>My Role</h2>
                         <ul class="role-list">
                             <li class="role-item role-item-2-lines">Front-end Developer</li>
-                            <li class="role-item role-item-2">Website Manager</li>
+                            <li class="role-item role-item-2 role-item-2-lines">Back-end Developer</li>
                         </ul>
                     </div>
                 </section>
                 <section class="work-sample">
                     <div class="individual-work-sample-image-container">
-                        <img alt="screenshot of the home page for Mount Jewelers' site" src="../images/mountz-home.jpg"  class="individual-work-sample-image"/>
-                        <img alt="screenshot of the home page for Mount Jewelers' site" src="../images/mountz-location.jpg"  class="individual-work-sample-image"/>
+                        <img class=".individual-work-sample-image-border" alt="screenshot of Noteful app home screen includes the title, clickable list of all folder and notes, and buttons to add a folder, a note, and delete notes" src="../images/noteful-home-800x600.jpg"  class="individual-work-sample-image"/>
+                        <img class=".individual-work-sample-image-border" alt="screenshot of Noteful app add note screen includes the title, clickable list of folders, and a form to add a new note" src="../images/noteful-add-note-800x581.jpg"  class="individual-work-sample-image"/>
+                        <img class=".individual-work-sample-image-border" alt="screenshot of Noteful app folder view screen includes the title, list of all folders with the selected folder highlighted, and a list of the notes in that folder" src="../images/noteful-folder-view-800x581.jpg" class="individual-work-sample-image"/>
                      </div>  
                 </section>    
                     <section class="project-tech work-section">
                         <h2>Technologies Used</h2>
                         <ul class="tech-list">
-                            <li class="tech-item">HTML5</li>
-                            <li class="tech-item tech-item-2">CSS3</li>
+                            <li class="tech-item">React</li>
+                            <li class="tech-item">Express</li>
+                            <li class="tech-item">PostgreSQL</li>
+                            <li class="tech-item">HTML</li>
                             <li class="tech-item tech-item-3">JavaScript</li>
-                            <li class="tech-item tech-item-2">jQuery</li>
+                            <li class="tech-item tech-item-4">API</li>
                         </ul>
                     </section>
 
                     <section class="process-future-work-sample">
                         <div class="project-process work-section">
                             <h2>Process</h2>
-                            <p>Mountz Jewelers wanted a more modern, polished site for their eCommerce website. The refresh was developed on the Shopify platform.</p>
+                            <p class="work-description">This application allows users to create new notes and folders. The user can view all the notes, notes by folder, or individual notes. Users can also delete notes.</p>
+                            <p class="work-description">The front end of this application was developed using React. I created a static version of the app first deciding on the best components and component hierarchy for the different features required for the application. Once a static version was created, I added state and functionality to the app.</p>
                     
-                            <p class="work-description">This was my first time customizing a Shopify theme which is built using Liquid and Sass.</p>
-                            <p>Some of the challenges with developing this site was creating the home page testimonial area. The theme did not come with this type of section. In order to make it work with the component structure of a Shopify theme while still having the functionality the client wanted, I refactored the blog component to use as a testimonial  one. There were also some custom pricing conditionals that had to be created in the catalog page template files to work with their unique pricing structure.</p>
+                            <p class="work-description">The back-end was created using Express and PostgreSQL. The API routes were organized with Express routes and service objects. Tests were set up for all of the routes and various possibilities.</p>
+                            
+                            
                         </div>
                         <div class="updates work-section">
                             <h2>Future Versions</h2>
-                            <p class="work-description">The initial launch of the site refresh focused on the home page, catalog pages, and overall theme. The next stage will be reorganizing the interior pages, writing new copy, and giving them a more polished, professional look.
+                            <p class="work-description">Future versions of the app will allow users to delete folders and update exisiting notes and folders. 
                             </p>
                         </div>
                     </section>
                     <section class="work-section cta-buttons button-container">
-                        <a href="https://mountzjewelers.com/" target="_blank" class="button bouncy">Live App</a>
-                        <a role="button" href="contact.php" class="button contact-button button1 bouncy contact-button-small-screens">Contact</a>              
+                        <a href="https://noteful-app-bice.now.sh/" target="_blank" class="button bouncy button-wider">Live App</a>
+                        <a role="button" href="contact.php" class="button button-wider contact-button button1 bouncy contact-button-small-screens">Contact</a>
+                       <a href="https://github.com/mteachey/noteful" target="_blank" class="button bouncy button-wider">GitHub:client</a> 
+                       <a href="https://github.com/mteachey/noteful-api" target="_blank" class="button bouncy button-wider">GitHub:server</a>                     
                 </section>
             </main>
             <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

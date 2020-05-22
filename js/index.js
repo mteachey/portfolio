@@ -1,27 +1,32 @@
 function handleClickToSeeWorkExamples(){
-    $('.mobile-buttons').on('click', '.js-toggle__mobile-button-work-1', function(event) {
+    $('.mobile-buttons').on('click', '.js-toggle__mobile-button-work-all', function(event) {
         $('.js-toggle__mobile-button-work').removeClass('button-active') ;
         $(this).addClass('button-active') ;
-        $('.work-example').removeClass('js-toggle__display');
-        $('.example-1').toggleClass('js-toggle__display');  
+        $('.work-example').addClass('js-toggle__display');
+        //$('.example-1').addClass('js-toggle__display');  
       });   
-      $('.mobile-buttons').on('click', '.js-toggle__mobile-button-work-2', function(event) {
+      $('.mobile-buttons').on('click', '.js-toggle__mobile-button-work-apps', function(event) {
         $('.js-toggle__mobile-button-work').removeClass('button-active') ;
         $(this).addClass('button-active') ;
         $('.work-example').removeClass('js-toggle__display');
-        $('.example-2').toggleClass('js-toggle__display');  
+        $('.js-type-app').addClass('js-toggle__display');  
       });     
-      $('.mobile-buttons').on('click', '.js-toggle__mobile-button-work-3', function(event) {
+      $('.mobile-buttons').on('click', '.js-toggle__mobile-button-work-websites', function(event) {
         $('.js-toggle__mobile-button-work').removeClass('button-active') ;
         $(this).addClass('button-active') ;
         $('.work-example').removeClass('js-toggle__display');
-        $('.example-3').toggleClass('js-toggle__display');  
+        $('.js-type-website').addClass('js-toggle__display');  
+      });     
+      $('.mobile-buttons').on('click', '.js-toggle__mobile-button-work-react', function(event) {
+        $('.js-toggle__mobile-button-work').removeClass('button-active') ;
+        $(this).addClass('button-active') ;
+        $('.work-example').removeClass('js-toggle__display');
+        $('.js-type-react').addClass('js-toggle__display');  
       });     
       
 }
 
-function MobileMenuAnimation(){
-        
+function MobileMenuAnimation(){        
     $('.mobile-menu-icon-container').on('click',function(event) {
         $(this).toggleClass('change');  
         $('nav').toggleClass('mobile-nav');
@@ -30,7 +35,6 @@ function MobileMenuAnimation(){
         $('.mobile-menu-icon-container').removeClass('change');  
         $('nav').removeClass('mobile-nav');
     });        
-
 }
 
 
@@ -56,24 +60,16 @@ function navScrollEffect() {
         } else {
             $(".blue-dots, .green-dots, .orange-dots").removeClass('no-animation')
         }
-
-    });
-
-    
-   
+    }); 
 }
-
-
 
 function onLoad() {   
     handleClickToSeeWorkExamples();
     MobileMenuAnimation();
-
     navScrollEffect();
-   ;
-   activeNavLinks();
-  }
+    activeNavLinks();
+};
   
-  $(onLoad);
+$(onLoad);
 
  
