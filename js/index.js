@@ -1,27 +1,33 @@
 function handleClickToSeeWorkExamples(){
-    $('.mobile-buttons').on('click', '.js-toggle__mobile-button-work-all', function(event) {
-        $('.js-toggle__mobile-button-work').removeClass('button-active') ;
+    $('.work-buttons').on('click', '.js-toggle__button-work-all', function(event) {
+        $('.js-toggle__button-work').removeClass('button-active') ;
         $(this).addClass('button-active') ;
         $('.work-example').addClass('js-toggle__display');
         //$('.example-1').addClass('js-toggle__display');  
       });   
-      $('.mobile-buttons').on('click', '.js-toggle__mobile-button-work-apps', function(event) {
-        $('.js-toggle__mobile-button-work').removeClass('button-active') ;
+      $('.work-buttons').on('click', '.js-toggle__button-work-apps', function(event) {
+        $('.js-toggle__button-work').removeClass('button-active') ;
         $(this).addClass('button-active') ;
         $('.work-example').removeClass('js-toggle__display');
         $('.js-type-app').addClass('js-toggle__display');  
       });     
-      $('.mobile-buttons').on('click', '.js-toggle__mobile-button-work-websites', function(event) {
-        $('.js-toggle__mobile-button-work').removeClass('button-active') ;
+      $('.work-buttons').on('click', '.js-toggle__button-work-websites', function(event) {
+        $('.js-toggle__button-work').removeClass('button-active') ;
         $(this).addClass('button-active') ;
         $('.work-example').removeClass('js-toggle__display');
         $('.js-type-website').addClass('js-toggle__display');  
       });     
-      $('.mobile-buttons').on('click', '.js-toggle__mobile-button-work-react', function(event) {
-        $('.js-toggle__mobile-button-work').removeClass('button-active') ;
+      $('.work-buttons').on('click', '.js-toggle__button-work-react', function(event) {
+        $('.js-toggle__button-work').removeClass('button-active') ;
         $(this).addClass('button-active') ;
         $('.work-example').removeClass('js-toggle__display');
         $('.js-type-react').addClass('js-toggle__display');  
+      });     
+      $('.work-buttons').on('click', '.js-toggle__button-work-fullstack', function(event) {
+        $('.js-toggle__button-work').removeClass('button-active') ;
+        $(this).addClass('button-active') ;
+        $('.work-example').removeClass('js-toggle__display');
+        $('.js-type-fullstack').addClass('js-toggle__display');  
       });     
       
 }

@@ -313,7 +313,7 @@ h2{
     margin: 10px;
 }
 
-.mobile-buttons {
+.work-buttons {
     display: flex;
     justify-content: space-around;
     flex-wrap:wrap;
@@ -321,8 +321,9 @@ h2{
     margin-bottom: 60px; 
 }
 
-.mobile-buttons button{
-    padding: 7px 10px;
+.work-buttons button{
+    padding: 7px;
+    width:150px;
 }
 
 .button.button-active{
@@ -351,12 +352,15 @@ h2{
     border: 1px solid #460a86;
 }
 .orange-button{
-    border: 2px solid #d5652c;
+    border: 1px solid #d5652c;
 }
-.orange-button:hover{
-    border: 0px solid #d5652c;
-    background-color: #fff;
-    color:#00003d;
+
+.blue-button:hover{
+    border: 1px solid #d5652c;
+}
+
+.green-button:hover {
+    border: 1px solid #d5652c;
 }
 
 .purple-button:focus {
@@ -712,6 +716,10 @@ section.cta-buttons{
 .role-item{
     height:48px;
     line-height: 45px;
+}
+
+.tech-item{
+    width:117px;
 }
 
 .role-item-2-lines {
