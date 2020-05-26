@@ -533,7 +533,7 @@ h2{
     margin: 20px 0 0 0
 }
 .work-image-container p {
-    font-size: 18px;
+    font-size: 17px;
     position: relative;
     color: #fff;
     padding: 10px;
@@ -902,16 +902,16 @@ body {
 }
 
 .work-image-container {
-    width: 600px;
-    height: 450px;
+    width: 510px;
+    height: 382.5px;
  }
 .work-image-container .work-image-mask, .work-image-container .content {
-    width: 600px;
-    height: 450px;
+    width: 510px;
+    height: 382.5px;
 
 }
 .work-image-container img {
-    width:600px;
+    width:510px;
 }
 
 .work-sample-intro{
@@ -1082,7 +1082,7 @@ background:#000;
 }
 
 .work-example{
-    width: 640px;
+    width: 544px;
     flex-direction: column;
     align-items: center;
     margin-bottom: 3em;
@@ -1099,7 +1099,7 @@ background:#000;
 
 .role-list, .tech-list{
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 5px;
 }
 
@@ -1196,8 +1196,29 @@ footer {
     width: 475px;
 }
 
-
 }
+/******MQ min1300px****/
+@media only screen and (min-width:1300px){
+.work-example{
+    width: 640px;
+}
+
+.work-image-container {
+    width: 600px;
+    height: 450px;
+ }
+.work-image-container .work-image-mask, .work-image-container .content {
+    width: 600px;
+    height: 450px;
+}
+.work-image-container img {
+    width:600px;
+}
+
+.work-image-container p {
+    font-size: 18px;
+}
+}/*end MQ 1300*/
 
 /******background-animation*******/
 svg#Layer_1 {
