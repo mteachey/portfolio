@@ -69,6 +69,19 @@ function navScrollEffect() {
     }); 
 }
 
+$('.work-av-link[href*="#"]').on('click', function(e) {
+    e.preventDefault();
+    $('.blue-dots,.green-dots,.orange-dots').addClass('js-stop-animation');
+  
+    $('html, body').animate(
+      {
+        scrollTop: $($(this).attr('href')).offset().top-50,
+      },
+      800,
+      'linear'
+    )
+  })
+
 function onLoad() {   
     handleClickToSeeWorkExamples();
     MobileMenuAnimation();

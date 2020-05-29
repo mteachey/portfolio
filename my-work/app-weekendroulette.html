@@ -22,9 +22,21 @@
                     <ul class="nav">
                         <li class="nav-link"><a href="../index.html">home</a></li>
                         <li class="nav-link"><a href="../index.html#about-page">about</a></li>                      
-                        <li class="nav-link"><a href="../index.html#work-page">work</a></li>
-                        <li class="nav-link"><a href="../index.html#blog-page">blog</a></li>
-                        <li class="nav-link"><a href="../index.html#contact-page">contact</a></li>
+                        <ul class="nav-link nav-with-sub" id="work-av-link">
+                            <li class="nav-link sub-nav-top sub-nav"><a href="../index.html#work">work</a></li>
+                            
+                            <div class="sub-nav-container display__desktop">
+                                <li class="nav-link sub-nav"><a href="app-weekendroulette.html">Weekend Roulette</a></li>
+                                <li class="nav-link sub-nav"><a href="app-lovemore.html">Love More Laugh More</a></li>
+                                <li class="nav-link sub-nav"><a href="app-noteful.html">Noteful</a></li>
+                                <li class="nav-link sub-nav"><a href="aggregate.html">Aggregate Materials</a></li>
+                                <li class="nav-link sub-nav"><a href="potash.html">Potash America</a></li>
+                                <li class="nav-link sub-nav"><a href="50fifty.html">50 Fifty</a></li>
+                                <li class="nav-link sub-nav"><a href="mountz.html">Mountz Jewelers</a></li>
+                            </div>
+                        </ul>
+                        <!--li class="nav-link"><a href="../index.html#blog-page">blog</a></li-->
+                        <li class="nav-link"><a href="../index.html#contact">contact</a></li>
                     </ul>
                 </nav>                    
             </header>
@@ -33,28 +45,21 @@
                 <section class="work-sample work-sample-intro">
                     <div class="projectDescrip work-section">
                         <h2>Description</h2>
-                        <p>Weekend Roulette is app that allows users to leave the weekend decision making to the app. The app provides two day activities and two evening ones with the 'spin of a wheel' (click of a button). Give it a spin!</p>
-                        <a role="button" href="https://mteachey.github.io/weekend-roulette/" class="button">Live view</a>
+                        <p>Weekend Roulette is app that allows users to leave the weekend decision making to the app. The app provides two day activities and two evening ones with the 'spin of a wheel' (click of a button). Give it a spin!</p>                      
                     </div>
-                   
-    
+                    <a role="button" target="_blank" href="https://mteachey.github.io/weekend-roulette/" class="button">Live View</a>
+                </section>  
+                <section class="roles-tech-section">
                     <div class="project-role work-section">
                         <h2>My Role</h2>
                         <ul class="role-list">
-                            <li class="role-item role-item-2-lines">Front-end Developer</li>
+                            <li class="role-item role-item-2-lines">Front-end<br/>Developer</li>
                             <li class="role-item role-item-2">Designer</li>
-                            <li class="role-item role-item-3 role-item-2-lines">Product Developer</li>
+                            <li class="role-item role-item-3 role-item-2-lines">Product<br/>Developer</li>
                         </ul>
                     </div>
-                </section>
-                <section class="work-sample">
-                    <div class="individual-work-sample-image-container">
-                        <img alt="screenshot of Weekend Roulette app home screen includes the title, background image of the close-up of a roulette wheel, and two buttons" src="../images/weekend-roulette-home-800x451.jpg"  class="individual-work-sample-image"/>
-                        <img alt="screenshot of Weekend Roulette app location screen" src="../images/weekend-roulette-location-800.jpg"  class="individual-work-sample-image"/>
-                        <img alt="screenshot of Weekend Roulette app form screen" src="../images/weekend-roulette-coordinates-800.jpg" class="individual-work-sample-image"/>
-                     </div>  
-                </section>    
-                    <section class="project-tech work-section">
+                
+                    <div class="project-tech work-section">
                         <h2>Technologies Used</h2>
                         <ul class="tech-list">
                             <li class="tech-item">HTML5</li>
@@ -64,27 +69,38 @@
                             <li class="tech-item tech-item-3">AJAX</li>
                             <li class="tech-item tech-item-2">jQuery</li>
                         </ul>
-                    </section>
+                    </div>
+                </section>
+                <div class="work-images-process">
+                    <section class="work-sample">
+                        <div class="individual-work-sample-image-container">
+                            <img alt="screenshot of Weekend Roulette app home screen includes the title, background image of the close-up of a roulette wheel, and two buttons" src="../images/weekend-roulette-home-800x451.jpg"  class="individual-work-sample-image"/>
+                            <img alt="screenshot of Weekend Roulette app location screen" src="../images/weekend-roulette-location-800.jpg"  class="individual-work-sample-image"/>
+                            <img alt="screenshot of Weekend Roulette app form screen" src="../images/weekend-roulette-coordinates-800.jpg" class="individual-work-sample-image"/>
+                        </div>  
+                    </section>    
+                        
 
-                    <section class="process-future-work-sample">
-                        <div class="project-process work-section">
-                            <h2>Process</h2>
-                            <p>The app makes calls to four APIs - a hiking trail API, biking trail API, latitude/longitude API, and a restaurant API -  in order to obtain the activity selections for users.While using the app, users experience some simple CSS animations that add to the enjoyment and experience of the app.</p>
-                    
-                            <p class="work-description">The free APIs being used all had some constraints to work with and around. All three activity APIs required latitude and longitude coordinates to be provided as a parameter which required adding the additional API call. I decided to have UIs with separate API calls - one that would return the coordinates and another that would return the results. Although, this added another form for users to submit, it simplified the API calls and made it easier to determine if there was an error in user input or with the servers.</p>
-                            <p>The restaurant API could return hundreds of results for a location, but it would only return 20 at a time and the range had to be specified in the request (i.e. 1-19 or 340-359). This posed a problem since ideally the activities given to a user would be two random selections among all the results possible - not just the first 20. I solved this by generating random numbers to enter as the parameter range before making the API call.</p>
-                            <p>Another problem that needed to be solved was the sequence of fetching the data to return random activities depending on whether a user wanted all three activities choices(biking, hiking, and restaurants) or a combination of two, or just one.</p>
-                            
-                        </div>
-                        <div class="updates work-section">
-                            <h2>Future Versions</h2>
-                            <p class="work-description">Future versions of the app will add more APIs, such as “points of interest” from Google Maps and music from Bands in Town, to add more types of activities. In addition, future versions will include an improved restaurant API and using Google Geocaching for latitude and longitude.
-                            </p>
-                        </div>
-                    </section>
+                        <section class="process-future-work-sample">
+                            <div class="project-process work-section">
+                                <h2>Process</h2>
+                                <p>The app makes calls to four APIs - a hiking trail API, biking trail API, latitude/longitude API, and a restaurant API -  in order to obtain the activity selections for users. While using the app, users experience some simple CSS animations that add to the enjoyment and experience of the app.</p>
+                        
+                                <p class="work-description">The free APIs being used all had some constraints to work with and around. All three activity APIs required latitude and longitude coordinates to be provided as a parameter which required adding the additional API call. I decided to have UIs with separate API calls - one that would return the coordinates and another that would return the results. Although, this added another form for users to submit, it simplified the API calls and made it easier to determine if there was an error in user input or with the requests.</p>
+                                <p>The restaurant API could return hundreds of results for a location, but it would only return 20 at a time and the range had to be specified in the request (i.e. 1-19 or 340-359). This posed a problem since ideally the activities given to a user would be two random selections among all the results possible - not just the first 20. I solved this by generating random numbers to enter as the parameter range before making the API call.</p>
+                                <p>Another problem that needed to be solved was the sequence of fetching the data to return random activities depending on whether a user wanted all three activities choices (biking, hiking, and restaurants) or a combination of two, or just one.</p>
+                                
+                            </div>
+                            <div class="updates work-section">
+                                <h2>Future Versions</h2>
+                                <p class="work-description">Future versions of the app will add more APIs, such as &quotpoints of interest&quot from Google Maps and music from Bands in Town, to add more types of activities. In addition, future versions will include an improved restaurant API and using Google Geocaching for latitude and longitude.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
                     <section class="work-section cta-buttons button-container">
-                        <a href="https://mteachey.github.io/weekend-roulette/" target="_blank" class="button bouncy">Live App</a>
-                        <a role="button" href="contact.php" class="button contact-button button1 bouncy contact-button-small-screens">Contact</a>
+                        <a href="https://mteachey.github.io/weekend-roulette/" target="_blank" class="button bouncy">Live View</a>
+                        <a role="button" href="../index.html#contact" class="button contact-button button1 bouncy contact-button-small-screens">Contact</a>
                        <a href="https://github.com/mteachey/weekend-roulette" target="_blank" class="button bouncy">GitHub</a>                   
                 </section>
             </main>

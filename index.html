@@ -20,19 +20,19 @@
                   </div>
                 <nav>
                     <ul class="nav">
-                        <li class="nav-link"><a href="/index.html">home</a></li>
-                        <li class="nav-link"><a href="file:///Users/bbelindi/Documents/Thinkful/practices/portfolio/index.html#about-page">about</a></li>                      
-                        <li class="nav-link"><a href="#work-page">work</a></li>
+                        <li class="nav-link"><a class="work-av-link" href="#main">home</a></li>
+                        <li class="nav-link"><a class="work-av-link" href="#about-page">about</a></li>                      
+                        <li class="nav-link" id="work-av-link"><a href="#work" class="work-av-link">work</a></li>
                         <!--li class="nav-link"><a href="#blog-page">blog</a></li-->
-                        <li class="nav-link"><a href="#contact-page">contact</a></li>
+                        <li class="nav-link"><a class="work-av-link" href="#contact">contact</a></li>
                     </ul>
                 </nav>                    
             </header>
-            <main>
+            <main id="main">
                 <section class="home-page">
                     <div class="centered-content">
-                        <h1>Hi! I'm Melinda</h1><h2 class="tagline subheading"><span>-front-end developer,</span><span> problem-solver,</span><span> do-gooder</span></h2>
-                        <a class="green-button" href="#work-page">View My Work</a> 
+                        <h1>Hi! I'm Melinda</h1><h2 class="tagline subheading"><span>-full-stack developer,</span><span> problem-solver,</span><span> do-gooder</span></h2>
+                        <a class="green-button work-av-link" href="#work">View My Work</a> 
                     </div>                
                 </section>
                 <div class="marker" id="about-page"></div>
@@ -47,19 +47,20 @@
                             
                         <p>Before pursuing my love of code, I was a middle school science teacher and chemical engineering graduate from Virginia Tech. I have had the fortune to live and work in such amazing cities as New York and Washington, D.C., as well as, small, mountain towns like Boone, NC. I currently call Denver, CO my home and love it! When I am not working with code, you can usually find me enjoying the outdoors with my dog and a pair of hiking shoes or a bike.
                         </p>
-                        <a class="contact-button-about orange-button bouncy blue-inside-button button solo-button desktop-display" href="#contact-page">Contact Me</a>
+                        <a class="work-av-link contact-button-about orange-button bouncy blue-inside-button button solo-button desktop-display" href="#contact">Contact Me</a>
                     </div>
                     <div class="about" id="skills">
                         <h2>Skills</h2>
                         <ul>
-                            <li>HTML5, CSS3, JavaScript, React, Express, PostgreSQL, SQL, Node, JQuery, PHP, AJAX</li>
-                            <li>Website Management</li>
-                            <li>Responsive and UX Design</li>
-                            <li>Wordpress, Joomla, Shopify Development</li>
-                            <li>eCommerce</li>
-                            <li>Photoshop, Illustrator, InDesign</li>
-                            <li>Bootstrap, Git</li>
-                            <li>...as well as many more depending on the project.</li>
+                            <li class="skill-type">Technologies</li>
+                            <li>HTML5, CSS3, JavaScript, React, Express, PostgreSQL, SQL, Node, JQuery, PHP, AJAX,Bootstrap, Git</li>
+                            <li class="skill-type">Design</li>
+                            <li>Responsive and UX Design, Photoshop, Illustrator, InDesign</li>
+                            <li class="skill-type">Content-Management Systems</li>
+                            <li>Wordpress, Joomla, Shopify, Magento, and many other industry specific ones</li>
+                            <li class="skill-type">Knowledge of</li>
+                            <li>Website Management, eCommerce</li>
+                            <li>...as well as many skills more depending on the project.</li>
                         </ul>
 
                         <a class="contact-button-about orange-button  blue-inside-button button solo-button mobile-display" href="#contact-page">Contact Me</a>
@@ -138,7 +139,7 @@
                                     <img alt="screenshot of the home screen of the Noteful app" src="images/noteful-home-800x600.jpg" />
                                     <div class="work-image-mask">
                                         <h3>Noteful</h3>
-                                        <p class="work-description">Noteful is minimally styled full-stack application to save and organize notes. The client-side app was built with React and the server-side app was built using Express and PostgreSQL.</p>                         
+                                        <p class="work-description">Noteful is minimally styled full-stack application to save and organize notes. The client-side app was built with React, the API was built using Express, and the database was architected using PostgreSQL.</p>                         
                                         <p class="work-technologies"><span>Technologies used :</span> React, Express, PostgreSQL, SQL, Node, jQuery, JavaScript, CSS, HTML</p>                           
                                         <p class="fake-button">Learn More</p>
                                     </div>
@@ -200,7 +201,7 @@
                             <a  href="my-work/mountz.html" class="fake-button mobile-fake-button">Learn More</a>                          
                         </div><!--end .work-example-->
 
-                        <div class="work-example example-6 js-toggle__display js-type-website">
+                        <!--div class="work-example example-6 js-toggle__display js-type-website">
                             <h3 class="work-title">Painted Sky Creative</h3>
                             <a  href="my-work/psc.html">
                                 <div class="work-image-container work-image-container-effect">
@@ -216,10 +217,10 @@
                                 </div>
                             </a>       
                             <a  href="my-work/psc.html" class="fake-button mobile-fake-button">Learn More</a>                       
-                        </div><!--end .work-example-->
+                        </div--><!--end .work-example-->
 
                         
-                        <div class="work-example example-8 js-toggle__display js-type-app">
+                        <!--div class="work-example example-8 js-toggle__display js-type-app">
                             <h3 class="work-title">Are you a Yogi</h3>
                             <a  href="my work/yogi.html">
                                 <div class="work-image-container work-image-container-effect">
@@ -234,7 +235,7 @@
                                 </div>
                             </a>      
                             <a  href="my work/yogi.html" class="fake-button mobile-fake-button">Learn More</a>          
-                        </div><!--end .work-example-->              
+                        </div--><!--end .work-example-->              
                     </div><!--end .work-example-container-->
                     <div class="marker" id="blog-page"></div>
                 </section>  
@@ -274,7 +275,6 @@
                     </div>
                 </footer>
             </main>
- 
         <div class="background-animation">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 1200 1200" style="enable-background:new 0 0 1200 1200;" xml:space="preserve" aria-hidden="true" >

@@ -22,9 +22,21 @@
                     <ul class="nav">
                         <li class="nav-link"><a href="../index.html">home</a></li>
                         <li class="nav-link"><a href="../index.html#about-page">about</a></li>                      
-                        <li class="nav-link"><a href="../index.html#work-page">work</a></li>
-                        <li class="nav-link"><a href="../index.html#blog-page">blog</a></li>
-                        <li class="nav-link"><a href="../index.html#contact-page">contact</a></li>
+                        <ul class="nav-link nav-with-sub" id="work-av-link">
+                            <li class="nav-link sub-nav-top sub-nav"><a href="#work">work</a></li>
+                            
+                            <div class="sub-nav-container display__desktop">
+                                <li class="nav-link sub-nav"><a href="app-weekendroulette.html">Weekend Roulette</a></li>
+                                <li class="nav-link sub-nav"><a href="app-lovemore.html">Love More Laugh More</a></li>
+                                <li class="nav-link sub-nav"><a href="app-noteful.html">Noteful</a></li>
+                                <li class="nav-link sub-nav"><a href="aggregate.html">Aggregate Materials</a></li>
+                                <li class="nav-link sub-nav"><a href="potash.html">Potash America</a></li>
+                                <li class="nav-link sub-nav"><a href="50fifty.html">50 Fifty</a></li>
+                                <li class="nav-link sub-nav"><a href="mountz.html">Mountz Jewelers</a></li>
+                            </div>
+                        </ul>
+                        <!--li class="nav-link"><a href="../index.html#blog-page">blog</a></li-->
+                        <li class="nav-link"><a href="../index.html#contact">contact</a></li>
                     </ul>
                 </nav>                    
             </header>
@@ -34,23 +46,19 @@
                     <div class="projectDescrip work-section">
                         <h2>Description</h2>
                         <p>Potash American is a custom developed Wordpress site to meet the needs of a new multi-staged investment group.</p>
-                        <a role="button" href="https://potashamerica.net/" class="button">Live view</a>
-                    </div>   
+                    </div>
+                        <a role="button" target="_blank" href="https://potashamerica.net/" class="button">Live View</a>
+                      
+                </section>
+                <section class="roles-tech-section">
                     <div class="project-role work-section">
                         <h2>My Role</h2>
                         <ul class="role-list">
                             <li class="role-item role-item-2-lines">Front-end Developer</li>
-                            <li class="role-item role-item-2">Website Manager</li>
+                            <li class="role-item role-item-2 role-item-2-lines">Website Manager</li>
                         </ul>
                     </div>
-                </section>
-                <section class="work-sample">
-                    <div class="individual-work-sample-image-container">
-                        <img alt="screenshot of the home page of Potash America's site" src="../images/potash-home.jpg"  class="individual-work-sample-image"/>
-                        <img alt="screenshot of Key Sectors interior page of Potash America's site" src="../images/potash-keysectors.jpg"  class="individual-work-sample-image"/>
-                     </div>  
-                </section>    
-                    <section class="project-tech work-section">
+                    <div class="project-tech work-section">
                         <h2>Technologies Used</h2>
                         <ul class="tech-list">
                             <li class="tech-item">HTML5</li>
@@ -60,7 +68,15 @@
                             <li class="tech-item tech-item-3">AJAX</li>
                             <li class="tech-item tech-item-2">jQuery</li>
                         </ul>
-                    </section>
+                    </div>
+                </section>
+                <div class="work-images-process">
+                    <section class="work-sample">
+                        <div class="individual-work-sample-image-container">
+                            <img alt="screenshot of the home page of Potash America's site" src="../images/potash-home.jpg"  class="individual-work-sample-image"/>
+                            <img alt="screenshot of Key Sectors interior page of Potash America's site" src="../images/potash-keysectors.jpg"  class="individual-work-sample-image"/>
+                        </div>  
+                    </section>    
 
                     <section class="process-future-work-sample">
                         <div class="project-process work-section">
@@ -76,11 +92,13 @@
                             </p>
                         </div>
                     </section>
-                    <section class="work-section cta-buttons button-container">
-                        <a href="https://potashamerica.net/" target="_blank" class="button bouncy">Live App</a>
-                        <a role="button" href="contact.php" class="button contact-button button1 bouncy contact-button-small-screens">Contact</a>                
+                </div>
+                <section class="work-section cta-buttons button-container">
+                        <a href="https://potashamerica.net/" target="_blank" class="button bouncy">Live View</a>
+                        <a role="button" href="../index.html#contact" class="button contact-button button1 bouncy contact-button-small-screens">Contact</a>                
                 </section>
-            </main>
+           
+         </main>
             <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
             <script src="../js/index.js"></script>
     </body>
