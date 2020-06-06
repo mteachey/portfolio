@@ -84,9 +84,9 @@ nav.mobile-nav a{
     font-size: 26px;
 }
 
-a.focused-link{
+/*a.focused-link{
     border-bottom:2px #007900 solid;
-}
+}*/
 
 ul{
     margin-block-start: 0em;
@@ -279,7 +279,7 @@ cite {
 
 .home-page a{
     padding: 10px;
-    border: 2px solid green;
+    border: 2px solid #007900;
     background-color: #fff;
     display: block;
     width: 160px;
@@ -725,14 +725,13 @@ section.cta-buttons{
 .role-list, .tech-list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
 
 .role-item, .tech-item {
     border-bottom: 2px solid #d5652c;
     border-color:#d5652c;
-   /* background-color:#d5652c;*/
     width: 145px;
     height: 45px;
     line-height: 42px;
@@ -971,28 +970,8 @@ body {
     padding-top:63.75px
 }
 
-.roles-tech-section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.roles-tech-section > div {
-    width: 44%;
-}
-
-.role-list, .tech-list {
-    flex-direction: row;
-    justify-content:space-between;
-}
-
 .roles-tech-section h2{
     text-align:center;
-}
-
-.project-tech {
-    padding-top: 0px;
-    margin-top:1em;
 }
 
 .process-future-work-sample{
@@ -1002,6 +981,11 @@ body {
 .process-future-work-sample > div{
     max-width:500px;
     margin: 0 20px;
+}
+
+.process-future-work-sample > div.no-updates-section{
+    max-width:800px;
+    margin:auto;
 }
 
 .interior-page h1 {
@@ -1065,14 +1049,14 @@ nav {
   .sub-nav-container li:nth-last-child(1) a {
     padding-bottom: 16px;
 }
+
+.nav-with-sub:hover .sub-nav-container {
+    display: block;
+    }
   
   .sub-nav-container a:hover {
     background-color:#d5652c;
   }
-  
-/*  .nav-with-sub:hover .sub-nav-container {
-    display: block;
-  }*/
 
 ul{
     margin-top: 0px;
@@ -1117,6 +1101,10 @@ header{
     color:#fff;
 }
 
+.blue-white-header a.focused-link{
+    border-bottom:0px #ee710c solid;
+}
+
 
 .clearHeader.darkHeader {
 background:#000;
@@ -1137,9 +1125,20 @@ background:#000;
 }/*end of MQ760px*/
 
 @media only screen and (min-width:960px){
-    .nav-with-sub:hover .sub-nav-container {
-        display: block;
-      }
+.roles-tech-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.roles-tech-section > div {
+    width: 44%;
+}
+
+.project-tech {
+    padding-top: 0px;
+    margin-top:1em;
+}
 
 .mobile-display{
     display:none;
@@ -1223,8 +1222,6 @@ background:#000;
 }
 
 .role-list, .tech-list{
-    flex-direction:row;
-    justify-content: space-around;
     margin-top: 5px;
 }
 
