@@ -483,7 +483,7 @@ button:hover{
     box-shadow: 0 0 1px #000;
     width: 115px;
     margin:auto;
-    margin-top:10px;
+    margin-top:0px;
     font-size: 14px;
     text-align: center;
 }
@@ -510,7 +510,7 @@ button:hover{
 
 .work-title{
     text-align:center;
-    margin-bottom:10px;
+    margin-bottom:-25px;
 }
 
 .work-image-container {
@@ -520,7 +520,7 @@ button:hover{
     overflow: hidden;
     position: relative;
     text-align: center;
-    box-shadow: 0px 2px 3px 1px rgba(0,0,0,.5);
+    /*box-shadow: 0px 2px 3px 1px rgba(0,0,0,.5);*/
     cursor: default;
 }
 .work-image-container .work-image-mask, .work-image-container .content {
@@ -535,6 +535,7 @@ button:hover{
     display: block;
     position: relative;
     width:300px;
+    padding-top: 37.5px;
 }
 .work-image-container h3 {
     text-transform: uppercase;
@@ -572,7 +573,7 @@ button:hover{
 }
 .work-image-container-effect .work-image-mask { 
     background-color: rgba(0, 0, 61, 1); 
-    transition: all 1s linear;
+    transition: all .5s linear;
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -886,6 +887,14 @@ li.skill-type {
 }
 .work-image-container img {
     width:450px;
+    padding-top:56.25px;
+}
+
+.work-title{
+    margin-bottom:-45px;
+}
+.mobile-fake-button{
+    margin-top:-25px;
 }
 
 .work-image {
@@ -944,6 +953,10 @@ body {
     padding: 20px 25px;
 }
 
+.work-example {
+    margin-top:85px;
+}
+
 .work-image-container {
     width: 510px;
     height: 382.5px;
@@ -955,6 +968,7 @@ body {
 }
 .work-image-container img {
     width:510px;
+    padding-top:63.75px
 }
 
 .roles-tech-section {
@@ -1094,8 +1108,13 @@ header{
     color:#fff;
 }
 
+.nav-with-sub a {
+    border-bottom: 2px solid #fff;
+}
+
 .blue-white-header a:hover {
-    color:#fff22d;
+    border-bottom: 2px solid #ee710c;
+    color:#fff;
 }
 
 
@@ -1364,6 +1383,7 @@ li.skill-type {
 }
 .work-image-container img {
     width:600px;
+    padding-top:75px;
 }
 
 .work-image-container p {

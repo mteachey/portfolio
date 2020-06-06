@@ -46,8 +46,12 @@
                     <div class="projectDescrip work-section">
                         <h2>Description</h2>
                         <p>Noteful is minimally styled full-stack application to save and organize notes. The client-side app was built with React and the server-side app was built using Express and PostgreSQL.</p>
+                        <a role="button" target="_blank" href="https://noteful-app-bice.now.sh" class="button">Live View</a>
                     </div>
-                    <a role="button" target="_blank" href="https://noteful-app-bice.now.sh" class="button">Live View</a>
+                    <div>
+                        <img alt="screenshot of Noteful app on a desktop, mobile, and tablet" src="../images/noteful-devices.png" class="individual-work-sample-image"/>
+                    </div>
+                   
                 </section>   
                 <section class="roles-tech-section">
                     <div class="project-role work-section">
@@ -60,11 +64,13 @@
                         <h2>Technologies Used</h2>
                         <ul class="tech-list">
                             <li class="tech-item">React</li>
+                            <li class="tech-item">Node.js</li>
                             <li class="tech-item">Express</li>
                             <li class="tech-item">PostgreSQL</li>
                             <li class="tech-item">HTML</li>
-                            <li class="tech-item tech-item-3">JavaScript</li>
-                            <li class="tech-item tech-item-4">API</li>
+                            <li class="tech-item tech-item-4">RESTful APIs</li>
+                            <li class="tech-item tech-item-4">Mocha</li>
+                            <li class="tech-item tech-item-4">Jest</li>
                         </ul>
                     </div>
                 </section>
@@ -82,7 +88,7 @@
                             <p class="work-description">This application allows users to create new notes and folders. The user can view all the notes, notes by folder, or individual notes. Users can also delete notes.</p>
                             <p class="work-description">The front end of this application was developed using React. I created a static version of the app first deciding on the best components and component hierarchy for the different features required for the application. Once a static version was created, I added state and functionality to the app.</p>
                     
-                            <p class="work-description">The back-end was created using Express and PostgreSQL. The API routes were organized with Express routes and service objects. Tests were set up for all of the routes and different possible errors.</p>                               
+                            <p class="work-description">The back-end was created using Node.js, Express and PostgreSQL. The RESTful API was organized with Express routes and service objects.  There are endpoints for all CRUD operations - creating new notes and folder, reading notes and folders (all and by id), updating notes and folders, and deleting notes. Tests were set up for all of the routes and different possible errors using Mocha and Jest.</p>                               
                         </div>
                         <div class="updates work-section">
                             <h2>Future Versions</h2>
