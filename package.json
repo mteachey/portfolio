@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Melinda's Portfolio site",
+  "main": "index.js",
+  "scripts": {
+   "compile:sass":"node-sass sass/main.scss style/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mteachey/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mteachey/portfolio/issues"
+  },
+  "homepage": "https://github.com/mteachey/portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

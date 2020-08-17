@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <title>Melinda Teachey - full-stack developer, problem-solver, do-gooder | Uplift</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" type="image/ico" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link rel="stylesheet" href="../style/main.css">
+    </head>
+
+    <body class="interior-page">       
+            <header id="top" class="header no-scroll-header blue-white-header">  
+                <div class="mobile-menu-icon-container">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-link"><a href="../index.html">home</a></li>
+                        <li class="nav-link"><a href="../index.html#about-page">about</a></li>                      
+                        <ul class="nav-link nav-with-sub" id="work-av-link">
+                            <li class="nav-link sub-nav-top sub-nav"><a href="../index.html#work">work</a></li>
+                            
+                            <div class="sub-nav-container display__desktop">
+                                <li class="nav-link sub-nav"><a href="app-uplift.html">Uplift</a></li>
+                                <li class="nav-link sub-nav"><a href="app-weekendroulette.html">Weekend Roulette</a></li>
+                                <li class="nav-link sub-nav"><a href="app-lovemore.html">Love More Laugh More</a></li>
+                                <li class="nav-link sub-nav"><a href="app-noteful.html">Noteful</a></li>
+                                <li class="nav-link sub-nav"><a href="aggregate.html">Aggregate Materials</a></li>
+                                <li class="nav-link sub-nav"><a href="potash.html">Potash America</a></li>
+                                <li class="nav-link sub-nav"><a href="50fifty.html">50 Fifty</a></li>
+                                <li class="nav-link sub-nav"><a href="mountz.html">Mountz Jewelers</a></li>
+                            </div>
+                        </ul>
+                        <!--li class="nav-link"><a href="../index.html#blog-page">blog</a></li-->
+                        <li class="nav-link"><a href="../index.html#contact">contact</a></li>
+                    </ul>
+                </nav>                    
+            </header>
+            <main class="interior-page-main">
+                <h1>Uplift</h1>
+                <section class="work-sample work-sample-intro">
+                    <div class="projectDescrip work-section">
+                        <h2>Description</h2>
+                        <p>Uplift is a social media app where users can go to find positive, uplifting ideas, books, music, events, and podcasts. Users can create posts, follow other users, and bookmark posts with their private comments.
+                        </p>
+                        <a role="button" target="_blank" href="https://open-and-up-app.mteachey.vercel.app/" class="button">Live View</a>
+                    </div>
+                    <div>
+                        <img alt="screenshot of the Uplift app on a desktop, mobile, and tablet" src="../images/uplift-devices.jpg" class="individual-work-sample-image" />
+                    </div>
+                   
+                </section>
+                <section class="roles-tech-section">
+                    <div class="project-role work-section">
+                        <h2>My Role</h2>
+                        <ul class="role-list">
+                            <li class="role-item role-item-2-lines">Full-stack<br/>Developer</li>
+                            <li class="role-item role-item-2">Designer</li>
+                            <li class="role-item role-item-3 role-item-2-lines">Product<br/>Developer</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech work-section">
+                        <h2>Technologies Used</h2>
+                        <ul class="tech-list">
+                            
+                            <li class="tech-item">React</li>
+                            <li class="tech-item tech-item-3">PostgreSQL</li>
+                            <li class="tech-item tech-item-4">Node.js</li>
+                            <li class="tech-item">HTML5</li>
+                            <li class="tech-item tech-item-2">CSS3</li>
+                            <li class="tech-item tech-item-3">JavaScript</li>
+                            <li class="tech-item tech-item-4">REST APIs</li>
+                            <li class="tech-item tech-item-4">Mocha</li>
+                            <li class="tech-item tech-item-4">Jest</li>
+                            <li class="tech-item tech-item-4">Illustrator</li>
+                            <li class="tech-item tech-item-4">Photoshop</li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="work-images-process">
+                    <section class="work-sample">
+                        <div class="individual-work-sample-image-container">
+                            <img alt="screenshot of Uplift app dashboard screen" src="../images/uplift-dashboard-800.jpg"  class="individual-work-sample-image individual-work-sample-image-border"/>
+                            <img alt="screenshot of Uplift app new post form" src="../images/uplift-newpost-800.jpg" class="individual-work-sample-image individual-work-sample-image-border"/>
+                            <img alt="screenshot of Uplift app bookmarks page" src="../images/uplift-bookmark-800.jpg" class="individual-work-sample-image individual-work-sample-image-border"/>
+                        </div>  
+                    </section>    
+                    
+                    <section class="process-future-work-sample">
+                        <div class="project-process work-section">
+                            <h2>Process</h2>
+                            <p>Uplift is a full-stack, single-page application. The database is set up using Postgres, the client-side application is built using React and the server-side application is built using Node.js. Images uploaded by the user are stored in the cloud-based image service - Cloudinary. Testing is performed using Mocha and Jest. 
+                            </p>
+                    
+                            <p class="work-description">REST API endpoints were created to allow the client-side app to make GET requests for all posts, posts by user, posts by user connections (other users they), and posts of bookmarks.  In order to make these requests SQL queries to combine data from mulitple tables were created. In addition, POST, PATCH, and DELETE requests for creating posts, updating user comments on their bookmarked posts, and deleting their posts were set up.</p><p>Filter and search components were created so the user can filter posts by type of post and/or user type (themselves, their connections, or all users) or search posts by username.  In addition, to optimize the UX, buttons were created on the New Post form so that only fields specific to the type of post being created were visible to the user. Tooltips for the different icons and different colors for active icons were added to also increase user experience. 
+                            </p>
+                            <p> One of the most challenging aspects during the development was allowing users to upload images when creating a new post since I did not want to store the images in the same database. Posts with images will first make a request to the Cloudinary API to store the image, then retrieve the path to the image saved in Cloudinary, and finally add the new post information with the image path to the database.</p>
+                           
+                        </div>
+                        <div class="updates work-section">
+                            <h2>Future Versions</h2>
+                            <p class="work-description">The next version of the app will allow for new users to sign up, existing users to sign in, and allow existing users to update their account information.  Other upcoming versions will allow users to update their posts and add infinite scrolling functionality to UIs displaying posts.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <section class="work-section cta-buttons button-container">
+                        <a href="https://open-and-up-app.mteachey.vercel.app/" target="_blank" class="button bouncy button-wider">Live View</a>
+                        <a role="button" href="../index.html#contact" class="button contact-button button1 bouncy contact-button-small-screens button-wider">Contact</a>
+                       <a href="https://github.com/mteachey/uplift" target="_blank" class="button bouncy button-wider">GitHub-client</a> 
+                       <a href="https://github.com/mteachey/uplift-api" target="_blank" class="button bouncy button-wider">GitHub-api</a>                   
+                </section>
+            </main>
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script src="../js/index.js"></script>
+    </body>
+</html>
