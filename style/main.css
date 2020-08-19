@@ -212,11 +212,11 @@ blockquote {
   margin-inline-end: 10px;
   margin-block-start: 0em;
   margin-block-end: 0em;
-  font-style: italic; }
+  font-style: italic;
+  font-size: 1.65rem; }
 
 cite {
-  display: inline-block;
-  padding-top: 5px; }
+  display: inline-block; }
 
 .block {
   display: block; }
@@ -920,6 +920,8 @@ button:hover {
   .header--blue-white a:hover {
     border-bottom: 2px solid #ee710c;
     color: #fff; }
+  .nav__list-item--sub-nav a:hover {
+    border-bottom: 2px solid #00003d; }
   .header--blue-white a.focused-link {
     border-bottom: 0px #ee710c solid; }
   .clearHeader.darkHeader {
@@ -1028,7 +1030,6 @@ button:hover {
     text-align: left; }
   .body--interior h1 {
     text-align: center;
-    padding-left: 25px;
     padding-top: 25px; }
   .work-image-container-effect h3 {
     margin: 20px 40px 0px 40px; } }
