@@ -13,253 +13,233 @@
 
 <body>       
             <header id="top" class="header no-scroll-header">  
-                <div class="mobile-menu-icon-container">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                  </div>
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-link"><a class="work-av-link" href="#main">home</a></li>
-                        <li class="nav-link"><a class="work-av-link" href="#about-page">about</a></li>                      
-                        <li class="nav-link" id="work-av-link"><a href="#work" class="work-av-link">work</a></li>
+                <div class="header__mobile-menu-icon-container">
+                    <div class="header__mobile-menu-icon-container--bar1"></div>
+                    <div class="header__mobile-menu-icon-container--bar2"></div>
+                    <div class="header__mobile-menu-icon-container--bar3"></div>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__list-item nav__list-item--home-link nav__list-item--home">
+                            <a class="js-smooth-scroll nav__list-item-link " href="#main">home</a>
+                        </li>
+                        <li class="nav__list-item nav__list-item--home">
+                            <a class="js-smooth-scroll nav__list-item-link" href="#about-page">about</a>
+                        </li>                      
+                        <li class="nav__list-item nav__list-item--home">
+                            <a class="js-smooth-scroll nav__list-item-link" href="#work" >work</a>
+                        </li>
                         <!--li class="nav-link"><a href="#blog-page">blog</a></li-->
-                        <li class="nav-link"><a class="work-av-link" href="#contact">contact</a></li>
+                        <li class="nav__list-item nav__list-item--home nav__list-item--contact-link">
+                            <a class="js-smooth-scroll nav__list-item-link" href="#contact">contact</a>
+                        </li>
                     </ul>
                 </nav>                    
             </header>
-            <main id="main">
-                <section class="home-page">
+            <main id="main" class="main--landing-page">
+                <section class="section section--home">
                     <div class="centered-content">
-                        <h1>Hi! I'm Melinda</h1><h2 class="tagline subheading"><span>-full-stack developer,</span><span> problem-solver,</span><span> do-gooder</span></h2>
-                        <a class="green-button work-av-link" href="#work">View My Work</a> 
+                        <h1 class="main__heading">
+                            <span class="main__heading--primary">Hi! I'm Melinda</span>
+                            <span class="main__heading--secondary">
+                                <span>-full-stack developer,</span>
+                                <span> problem-solver,</span>
+                                <span> do-gooder</span>
+                            </span>
+                        </h1>
+                        <a class="button--green js-smooth-scroll" href="#work">View My Work</a> 
                     </div>                
                 </section>
                 <div class="marker" id="about-page"></div>
-                <section id="about" aria-label="About Melinda">
-                    <div class="about">
+                <section class="section section--about" id="about" aria-label="About Melinda">
+                    <div class="section__about-container">
                         <h2>About</h2>
                         <p>I am one of those truly well-rounded, good-at-it all individuals. I am an experienced front-end developer who loves getting knee-deep in code and coming up hours later. I have a knack for designing eye-loving layouts with an intuitive understanding of good user experience. On top of all of that, I am good at connecting and communicating with people.</p>
 
-                        <p>I have been working as a developer, honing my skills for four years now. For two of those years, I was a website manager and developer for a high-paced marketing firm. I was their lead developer on several site refreshes and new sites and managed over 50 websites on various CMSs and platforms. I coordinated multiple projects with a wide range of tasks, constraints, and budgets. I was the key decision-maker on platform selection, hosting, security, and UX design for our clients and consulted directly with our clients on the best web-related products for their business and budgets.</p>
+                        <p>I have been working as a developer, honing my skills for three years now. For two of those years, I was a website manager and developer for a high-paced marketing firm. I was their lead developer on several site refreshes and new sites and managed over 50 websites on various CMSs and platforms. I coordinated multiple projects with a wide range of tasks, constraints, and budgets. I was the key decision-maker on platform selection, hosting, security, and UX design for our clients and consulted directly with our clients on the best web-related products for their business and budgets.</p>
 
-                        <p>Currently, I am self-employed creating client-pleasing websites, applications, and experiences for clients while I add to my skill set to become a full-stack developer. I recently built a web app - weekend roulette - to help take the decision making out of your weekend. It uses several free APIs to help you plan your weekend.</p> 
+                        <p>Currently, I am self-employed creating client-pleasing websites, applications, and experiences for clients while I add to my skill set to become a full-stack developer. I recently built a social media app - Uplift - where users can go to find positive, uplifting ideas, books, music, events, and podcasts. It was developed using React, Node,js, Postgres.</p> 
                             
                         <p>Before pursuing my love of code, I was a middle school science teacher and chemical engineering graduate from Virginia Tech. I have had the fortune to live and work in such amazing cities as New York and Washington, D.C., as well as, small, mountain towns like Boone, NC. I currently call Denver, CO my home and love it! When I am not working with code, you can usually find me enjoying the outdoors with my dog and a pair of hiking shoes or a bike.
                         </p>
-                        <a class="work-av-link contact-button-about orange-button bouncy blue-inside-button button solo-button desktop-display" href="#contact">Contact Me</a>
+                        <a class="js-smooth-scroll js-active--contact button button--orange-blue button--bouncy  button--solo desktop-display" href="#contact">Contact Me</a>
                     </div>
-                    <div class="about" id="skills">
+                    <div class="section__about-container section__about-container--skills" id="skills">
                         <h2>Skills</h2>
-                        <ul>
-                            <li class="skill-type">Technologies</li>
-                            <li>HTML5, CSS3, JavaScript, React, Express, PostgreSQL, SQL, Node.js, JQuery, PHP, AJAX, Bootstrap, Git, RESTful APIs</li>
-                            <li class="skill-type">Design</li>
-                            <li>Responsive and UX Design, Photoshop, Illustrator, InDesign</li>
-                            <li class="skill-type">Content-Management Systems</li>
-                            <li>Wordpress, Joomla, Shopify, Magento, and many other industry specific ones</li>
-                            <li class="skill-type">Knowledge of</li>
-                            <li>Website Management, WCAG, eCommerce</li>
-                            <li>...as well as many skills more depending on the project.</li>
+                        <ul class="section__about-container__list">
+                            <li class="section__about-container__list-item section__about-container__list-item--heading section__about-container__list-item--heading--1">Technologies</li>
+                            <li class="section__about-container__list-item section__about-container__list-item--2">HTML5, CSS3, JavaScript, React, PostgreSQL, SQL, Node.js, JQuery, PHP, Mocha, Jest, NPM, Sass, Bootstrap, Git, RESTful APIs</li>
+                            <li class=" section__about-container__list-item section__about-container__list-item--heading">Design</li>
+                            <li class="section__about-container__list-item">Responsive and UX Design, Photoshop, Illustrator, InDesign</li>
+                            <li class="section__about-container__list-item section__about-container__list-item--heading">Content-Management Systems</li>
+                            <li class="section__about-container__list-item">Wordpress, Joomla, Shopify, Magento, and many other industry specific ones</li>
+                            <li class="section__about-container__list-item section__about-container__list-item--heading">Knowledge of</li>
+                            <li class="section__about-container__list-item">Website Management, WCAG, eCommerce</li>
+                            <li class="section__about-container__list-item">...as well as many skills more depending on the project.</li>
                         </ul>
 
-                        <a class="contact-button-about orange-button  blue-inside-button button solo-button mobile-display" href="#contact-page">Contact Me</a>
+                        <a class="button button--orange-blue button--solo mobile-display" href="#contact">Contact Me</a>
                         <div class="marker" id="work-page"></div>
                     </div>  
                 
                 </section>
                 
-                <section id="work" aria-label="Melinda's work samples">
-                    <h2 class="center-align">My Work</h2>
-                    <div class="work-buttons js-toggle-display">
-                        <button class="blue-button js-toggle__button-work js-toggle__button-work-all button-active">All</button>
-                        <button class="green-button js-toggle__button-work js-toggle__button-work-apps">Apps</button>
-                        <button class="blue-button js-toggle__button-work js-toggle__button-work-websites">Websites</button>
-                        <button class="green-button js-toggle__button-work js-toggle__button-work-react">React Apps</button>
-                        <button class="blue-button js-toggle__button-work js-toggle__button-work-fullstack">Full-stack Apps</button>
+                <section class="section section--work" id="work" aria-label="Melinda's work samples">
+                    <h2 class="section--work--heading">My Work</h2>
+                    <div class="button-container button-container--toggle-work  js-toggle-display js-toggle-buttons-container">
+                        <button class="button button--blue js-toggle__button-work js-toggle__button-work-all button-active">All</button>
+                        <button class="button button--green js-toggle__button-work js-toggle__button-work-apps">Apps</button>
+                        <button class="button button--blue js-toggle__button-work js-toggle__button-work-websites">Websites</button>
+                        <button class="button button--green js-toggle__button-work js-toggle__button-work-react">React Apps</button>
+                        <button class="button button--blue js-toggle__button-work js-toggle__button-work-fullstack">Full-stack Apps</button>
                     </div>
 
-                    
-                    
-                    <div class="work-example-container container display__mobile">
+                                    
+                    <div class="work-container display__mobile">
 
-                        <div class="work-example example-8 js-toggle__display js-type-app js-type-fullstack js-type-react">
-                            <h3 class="work-title">Uplift - social media app</h3>
+                        <div class="work-container__example js-toggle__display js-type-app js-type-fullstack js-type-react">
+                            <h3 class="work-container__example__heading">Uplift - social media app</h3>
                             <a  href="my-work/app-uplift.html">
                                 <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of Uplift on a desktop, mobile, and tablet" src="images/uplift-devices.jpg" />
-                                    <div class="work-image-mask">
-                                        <h3>Uplift - social media app</h3>
+                                    <img class="work-image-container__image"  alt="screenshot of Uplift on a desktop, mobile, and tablet" src="images/uplift-devices.jpg" />
+                                    <div class="work-image-container__mask">
+                                        <h3 class="work-image-container__heading">Uplift - social media app</h3>
                                         <p>Uplift is a social media app where users can go to find positive, uplifting ideas, books, music, events, and podcasts. Users can create posts, follow other users, and bookmark posts with their private comments.</p>
                                         <p>Technologies used : React, Node.js, PostgreSQL, JavaScript, CSS3, HTML5, REST APIs, Mocha, Jest</p>
-                                        <p class="fake-button">Learn More</p>
+                                        <p class="work-container__example__button ">Learn More</p>
                                       
                                     </div>
                                 </div>  
                             </a>
-                            <a  href="my-work/app-weekendroulette.html" class="fake-button mobile-fake-button">Learn More</a>                       
-                        </div></a><!--end .work-example-->
+                            <a  href="my-work/app-weekendroulette.html" class="work-container__example__button work-container__example__button--mobile">Learn More</a>                       
+                        </div></a><!--end .work-container__example-->
                    
 
 
-                        <div class="work-example example-1 js-toggle__display js-type-app">
-                            <h3 class="work-title">Weekend Roulette</h3>
+                        <div class="work-container__example js-toggle__display js-type-app">
+                            <h3 class="work-container__example__heading">Weekend Roulette</h3>
                             <a  href="my-work/app-weekendroulette.html">
                                 <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of Weekend Roulette on a desktop, mobile, and tablet" src="images/weekend-devices-same.png" />
-                                    <div class="work-image-mask">
-                                        <h3>Weekend Roulette</h3>
-                                        <p>Weekend Roulette is app that allows users to leave the weekend decision making to the app. The app provides two day activities and two evening ones with the 'spin of a wheel' (click of a button).</p>
-                                        <p>Technologies used : jQuery, JavaScript, CSS, HTML, REST APIs</p>
-                                        <p class="fake-button">Learn More</p>
+                                    <img class="work-image-container__image" alt="screenshot of Weekend Roulette on a desktop, mobile, and tablet" src="images/weekend-devices-same.png" />
+                                    <div class="work-image-container__mask">
+                                        <h3 class="work-image-container__heading">Weekend Roulette</h3>
+                                        <p class="work-image-container__description">Weekend Roulette is app that allows users to leave the weekend decision making to the app. The app provides two day activities and two evening ones with the 'spin of a wheel' (click of a button).</p>
+                                        <p class="work-image-container__technologies">Technologies used : jQuery, JavaScript, CSS, HTML, REST APIs</p>
+                                        <p class="work-container__example__button">Learn More</p>
                                       
                                     </div>
                                 </div>  
                             </a>
-                            <a  href="my-work/app-weekendroulette.html" class="fake-button mobile-fake-button">Learn More</a>                       
-                        </div></a><!--end .work-example-->
+                            <a  href="my-work/app-weekendroulette.html" class="work-container__example__button work-container__example__button--mobile">Learn More</a>                       
+                        </div></a><!--end .work-container__example-->
 
-                        <div class="work-example example-8 js-toggle__display js-type-app js-type-fullstack js-type-react">
-                            <h3 class="work-title">Love More Laugh More</h3>
+                        <div class="work-container__example js-toggle__display js-type-app js-type-fullstack js-type-react">
+                            <h3 class="work-container__example__heading">Love More Laugh More</h3>
                             <a  href="my-work/app-lovemore.html">
                                 <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of Love More Laugh More app on a desktop, mobile, and tablet" src="images/lovemore-devices.png" />
-                                    <div class="work-image-mask">
-                                        <h3>Love More Laugh More</h3>
-                                        <p>Love More Laugh More is a full-stack, single-page app to motivate and inspire users to care for themselves more.</p><p>This app provides a place for users to set goals, see and celebrate their progress, and find ideas for inspiration.</p>
-                                        <p>Technologies used : React, Node.js, PostgreSQL, JavaScript, CSS3, HTML5, REST APIs, Mocha, Jest</p>
-                                        <p class="fake-button">Learn More</p>
+                                    <img class="work-image-container__image"  alt="screenshot of Love More Laugh More app on a desktop, mobile, and tablet" src="images/lovemore-devices.png" />
+                                    <div class="work-image-container__mask">
+                                        <h3 class="work-image-container__heading">Love More Laugh More</h3>
+                                        <p class="work-image-container__description">Love More Laugh More is a full-stack, single-page app to motivate and inspire users to care for themselves more.</p><p class="work-image-container__description">This app provides a place for users to set goals, see and celebrate their progress, and find ideas for inspiration.</p>
+                                        <p class="work-image-container__technologies">Technologies used : React, Node.js, PostgreSQL, JavaScript, CSS3, HTML5, REST APIs, Mocha, Jest</p>
+                                        <p class="work-container__example__button">Learn More</p>
                                         
                                     </div>
                                 </div>  
                             </a>
-                            <a  href="my-work/app-lovemore.html" class="fake-button mobile-fake-button">Learn More</a>                       
-                        </div></a><!--end .work-example-->
+                            <a  href="my-work/app-lovemore.html" class="work-container__example__button work-container__example__button--mobile">Learn More</a>                       
+                        </div></a><!--end .work-container__example-->
                         
-                        <div class="work-example example-2 js-toggle__display js-type-website">
-                            <h3 class="work-title">Potash America</h3>
+                        <div class="work-container__example js-toggle__display js-type-website">
+                            <h3 class="work-container__example__heading">Potash America</h3>
                             <a  href="my-work/potash.html">
                                 <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of the Potash website on a desktop, mobile, and tablet" src="images/potash-devices.png" />
-                                    <div class="work-image-mask">
-                                        <h3>Potash America</h3>
-                                        <p class="work-description">Potash American is a custom developed Wordpress site to meet the needs of a new multi-staged investment group.</p>
-                                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
+                                    <img class="work-image-container__image"  alt="screenshot of the Potash website on a desktop, mobile, and tablet" src="images/potash-devices.png" />
+                                    <div class="work-image-container__mask">
+                                        <h3 class="work-image-container__heading">Potash America</h3>
+                                        <p class="work-image-container__description">Potash American is a custom developed Wordpress site to meet the needs of a new multi-staged investment group.</p>
+                                        <p class="work-image-container__technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
                                         </p>
-                                        <p class="fake-button">Learn More</p>
+                                        <p class="work-container__example__button">Learn More</p>
                                       
                                     </div>
                                 </div>
                             </a>     
-                            <a  href="my-work/potash.html" class="fake-button mobile-fake-button">Learn More</a>                         
-                        </div><!--end .work-example-->
+                            <a  href="my-work/potash.html" class="work-container__example__button work-container__example__button--mobile">Learn More</a>                         
+                        </div><!--end .work-container__example-->
 
-                        <div class="work-example example-7 js-toggle__display js-type-app js-type-fullstack js-type-react js-type-express js-type-postgres">
-                            <h3 class="work-title">Noteful</h3>
+                        <div class="work-container__example js-toggle__display js-type-app js-type-fullstack js-type-react js-type-express js-type-postgres">
+                            <h3 class="work-container__example__heading">Noteful</h3>
                             <a  href="my-work/app-noteful.html">
                                 <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of Noteful app on a desktop, mobile, and tablet" src="images/noteful-devices.png" />
-                                    <div class="work-image-mask">
-                                        <h3>Noteful</h3>
-                                        <p class="work-description">Noteful is minimally styled full-stack, single-page application to save and organize notes. The client-side app was built with React, the API was built using Express, and the database was architected using PostgreSQL.</p>                         
-                                        <p class="work-technologies"><span>Technologies used :</span> React, PostgreSQL, SQL, Node.js, jQuery, JavaScript, CSS, HTML, REST APIs, Mocha, Jest</p>                           
-                                        <p class="fake-button">Learn More</p>
+                                    <img class="work-image-container__image"  alt="screenshot of Noteful app on a desktop, mobile, and tablet" src="images/noteful-devices.png" />
+                                    <div class="work-image-container__mask">
+                                        <h3 class="work-image-container__heading">Noteful</h3>
+                                        <p class="work-image-container__description">Noteful is minimally styled full-stack, single-page application to save and organize notes. The client-side app was built with React, the API was built using Express, and the database was architected using PostgreSQL.</p>                         
+                                        <p class="work-image-container__technologies"><span>Technologies used :</span> React, PostgreSQL, SQL, Node.js, jQuery, JavaScript, CSS, HTML, REST APIs, Mocha, Jest</p>                           
+                                        <p class="work-container__example__button">Learn More</p>
                                     </div>
                                 </div>
                             </a>    
-                            <a  href="my-work/app-noteful.html" class="fake-button mobile-fake-button">Learn More</a>            
-                        </div><!--end .work-example-->
+                            <a  href="my-work/app-noteful.html" class="work-container__example__button work-container__example__button--mobile">Learn More</a>            
+                        </div><!--end .work-container__example-->
 
-                        <div class="work-example example-3 js-toggle__display js-type-website">
-                            <h3 class="work-title">Aggregate Materials</h3>
+                        <div class="work-container__example js-toggle__display js-type-website">
+                            <h3 class="work-container__example__heading">Aggregate Materials</h3>
                             <a  href="my-work/aggregate.html">
                                 <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of Aggregate Materials site on a desktop, mobile, and tablet" src="images/aggregate-devices.png" />
-                                    <div class="work-image-mask">
-                                        <h3>Aggregate Materials</h3>
-                                        <p class="work-description">Aggregate Materials is a custom developed Wordpress site for a large, international aggregate company</p>
-                                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML, REST APIs
+                                    <img class="work-image-container__image"  alt="screenshot of Aggregate Materials site on a desktop, mobile, and tablet" src="images/aggregate-devices.png" />
+                                    <div class="work-image-container__mask">
+                                        <h3 class="work-image-container__heading">Aggregate Materials</h3>
+                                        <p class="work-image-container__description">Aggregate Materials is a custom developed Wordpress site for a large, international aggregate company</p>
+                                        <p class="work-image-container__technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML, REST APIs
                                         </p>
-                                        <p class="fake-button">Learn More</p>                                     
+                                        <p class="work-container__example__button">Learn More</p>                                     
                                     </div>
                                 </div>
                             </a>    
-                            <a  href="my-work/aggregate.html" class="fake-button mobile-fake-button">Learn More</a>                          
-                        </div><!--end .work-example-->
+                            <a  href="my-work/aggregate.html" class="work-container__example__button work-container__example__button--mobile">Learn More</a>                          
+                        </div><!--end .work-container__example-->
 
-                        <div class="work-example example-5 js-toggle__display js-type-website">
-                            <h3 class="work-title">50 Fifty - the Art of Dessert</h3>
+                        <div class="work-container__example js-toggle__display js-type-website">
+                            <h3 class="work-container__example__heading">50 Fifty - the Art of Dessert</h3>
                             <a  href="my-work/50fifty.html">
                                 <div class="work-image-container work-image-container-effect">
                                     <!--img alt="screenshot of Weekend Roulette on a desktop, mobile, and tablet" src="images/50fifty-devices-different.png" /-->
-                                    <img alt="screenshot of the 50 Fifty - the art of dessert website on a desktop, mobile, and tablet" src="images/50fifty-devices.png" />
-                                    <div class="work-image-mask">
+                                    <img class="work-image-container__image"  alt="screenshot of the 50 Fifty - the art of dessert website on a desktop, mobile, and tablet" src="images/50fifty-devices.png" />
+                                    <div class="work-image-container__mask">
                                         <h3>50 Fifty - the Art of Dessert</h3>
-                                        <p class="work-description">50 Fifty is a custom developed Joomla website for a small, specialty dessert business.</p>
-                                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML, Joomla
+                                        <p class="work-image-container__description">50 Fifty is a custom developed Joomla website for a small, specialty dessert business.</p>
+                                        <p class="work-image-container__technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML, Joomla
                                         </p>
-                                        <p class="fake-button">Learn More</p>
+                                        <p class="work-container__example__button">Learn More</p>
                                       
                                     </div>
                                 </div>
                             </a>      
-                            <a  href="my-work/50fifty.html" class="fake-button mobile-fake-button">Learn More</a>                        
-                        </div><!--end .work-example-->
+                            <a  href="my-work/50fifty.html" class="work-container__example__button work-container__example__button--mobile">Learn More</a>                        
+                        </div><!--end .work-container__example-->
 
-                        <div class="work-example example-4 js-toggle__display js-type-website">
-                            <h3 class="work-title">Mountz Jewelers</h3>
+                        <div class="work-container__example js-toggle__display js-type-website">
+                            <h3 class="work-container__example__heading">Mountz Jewelers</h3>
                             <a  href="my-work/mountz.html">
                                 <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of the Mountz Jewelers website on a desktop, mobile, and tablet" src="images/mountz-devices.png" />
-                                    <div class="work-image-mask">
-                                        <h3>Mountz Jewelers</h3>
-                                        <p class="work-description">Mountz Jewelers is a custom developed eCommerce Shopify site for a medium-size jewelry business.</p>
-                                        <p class="work-technologies"><span>Technologies used :</span> Sass, Liquid, jQuery, JavaScript, CSS, HTML, 
+                                    <img class="work-image-container__image"  alt="screenshot of the Mountz Jewelers website on a desktop, mobile, and tablet" src="images/mountz-devices.png" />
+                                    <div class="work-image-container__mask">
+                                        <h3 class="work-image-container__heading">Mountz Jewelers</h3>
+                                        <p class="work-image-container__description">Mountz Jewelers is a custom developed eCommerce Shopify site for a medium-size jewelry business.</p>
+                                        <p class="work-image-container__technologies"><span>Technologies used :</span> Sass, Liquid, jQuery, JavaScript, CSS, HTML, 
                                         </p>
-                                        <p class="fake-button">Learn More</p>
+                                        <p class="work-container__example__button">Learn More</p>
                                       
                                     </div>
                                 </div>
                             </a>    
-                            <a  href="my-work/mountz.html" class="fake-button mobile-fake-button">Learn More</a>                          
-                        </div><!--end .work-example-->
+                            <a  href="my-work/mountz.html" class="work-container__example__button work-container__example__button--mobile">Learn More</a>                          
+                        </div><!--end .work-container__example-->
 
-                        <!--div class="work-example example-6 js-toggle__display js-type-website">
-                            <h3 class="work-title">Painted Sky Creative</h3>
-                            <a  href="my-work/psc.html">
-                                <div class="work-image-container work-image-container-effect">
-                                    <img alt="screenshot of the home page of the Painted Sky Creative website" src="images/psc-home-800x600.jpg" />
-                                    <div class="work-image-mask">
-                                        <h3>Painted Sky Creative</h3>
-                                        <p class="work-description">Painted Sky Creative is custom website for a freelance consulting business.</p>
-                                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
-                                        </p>
-                                        <p class="fake-button">Learn More</p>
-                                      
-                                    </div>
-                                </div>
-                            </a>       
-                            <a  href="my-work/psc.html" class="fake-button mobile-fake-button">Learn More</a>                       
-                        </div--><!--end .work-example-->
-
-                        
-                        <!--div class="work-example example-8 js-toggle__display js-type-app">
-                            <h3 class="work-title">Are you a Yogi</h3>
-                            <a  href="my work/yogi.html">
-                                <div class="work-image-container work-image-container-effect">
-                                    <img src="images/screenshots/yogi-start-700x470.jpg" alt="screenshot of Are You a Yogi app start screen includes the title, image of a yogi, begin button, initial question progress and score" />
-                                    <div class="work-image-mask">
-                                        <h3>Are you a Yogi</h3>
-                                        <p class="work-description">Are You a Yogi is a clean, user-friendly, fun app that allows users to move through a set of 10 questions (more could be easily added) to test their yoga knowledge.</p>                         
-                                        <p class="work-technologies"><span>Technologies used :</span> jQuery, JavaScript, CSS, HTML
-                                       </p>                        
-                                        <p class="fake-button">Learn More</p>
-                                    </div>
-                                </div>
-                            </a>      
-                            <a  href="my work/yogi.html" class="fake-button mobile-fake-button">Learn More</a>          
-                        </div--><!--end .work-example-->              
-                    </div><!--end .work-example-container-->
+                                   
+                    </div><!--end .work-container-->
                     <div class="marker" id="blog-page"></div>
                 </section>  
                 <!--section id="blog">
@@ -278,22 +258,22 @@
                     <a class="white-link"  href="">More posts...This will link to a blog landing page</a>
                     <div class="marker" id="contact-page"></div>
                 </section--> 
-                <section id="contact">
-                    <h2 class="center-align">Contact</h2>
+                <section class="section section--contact" id="contact">
+                    <h2 class="section--contact--heading">Contact</h2>
                     <form class="contact-form"></form>
                     
                 </section> 
-                <footer aria-label="contact information">
-                    <div class="footer-top">
+                <footer aria-label="contact information" class="footer">
+                    <div class="footer__contact">
                         <p><a href="mailto:melindateachey@gmail.com">melindateachey@gmail.com</a></p>
                         <div class="social"> 
                             <a href="https://www.linkedin.com/in/melinda-teachey-761251aa/" target="_blank"><img alt="LinkedIn icon" src="images/social/linkedIn.png"></a>
                             <a href="https://github.com/mteachey" target="_blank"><img alt="GitHub icon" src="images/social/github.png"></a>
                         </div>
                     </div>
-                    <div class="footer-bottom">
-                        <a href="#"><img class="icon-button" src="images/back-to-top-icon.png" alt="back to top button"/></a>
-                        <ul class="nav display__desktop"><li>about</li><li>contact</li><li>blog</li><li>work</li></ul>               
+                    <div class="footer__other">
+                        <a class="js-smooth-scroll js-active--home" href="#main"><img class="icon-button" src="images/back-to-top-icon.png" alt="back to top button"/></a>
+                        <!--ul class="nav display__desktop"><li>about</li><li>contact</li><li>blog</li><li>work</li></ul-->               
                         <p class="small-font">copyright 2020</p>
                     </div>
                 </footer>
