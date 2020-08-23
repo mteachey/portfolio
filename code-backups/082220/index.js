@@ -1,54 +1,62 @@
 function handleClickToSeeWorkExamples(){
-    $('.work-buttons').on('click', '.js-toggle__button-work-all', function(event) {
+    $('.js-toggle-buttons-container').on('click', '.js-toggle__button-work-all', function(event) {
         $('.js-toggle__button-work').removeClass('button-active') ;
         $(this).addClass('button-active') ;
-        $('.work-example').addClass('js-toggle__display');
+        $('.work-container__example').addClass('js-toggle__display');
         //$('.example-1').addClass('js-toggle__display');  
       });   
-      $('.work-buttons').on('click', '.js-toggle__button-work-apps', function(event) {
+      $('.js-toggle-buttons-container').on('click', '.js-toggle__button-work-apps', function(event) {
         $('.js-toggle__button-work').removeClass('button-active') ;
         $(this).addClass('button-active') ;
-        $('.work-example').removeClass('js-toggle__display');
+        $('.work-container__example').removeClass('js-toggle__display');
         $('.js-type-app').addClass('js-toggle__display');  
       });     
-      $('.work-buttons').on('click', '.js-toggle__button-work-websites', function(event) {
+      $('.js-toggle-buttons-container').on('click', '.js-toggle__button-work-websites', function(event) {
         $('.js-toggle__button-work').removeClass('button-active') ;
         $(this).addClass('button-active') ;
-        $('.work-example').removeClass('js-toggle__display');
+        $('.work-container__example').removeClass('js-toggle__display');
         $('.js-type-website').addClass('js-toggle__display');  
       });     
-      $('.work-buttons').on('click', '.js-toggle__button-work-react', function(event) {
+      $('.js-toggle-buttons-container').on('click', '.js-toggle__button-work-react', function(event) {
         $('.js-toggle__button-work').removeClass('button-active') ;
         $(this).addClass('button-active') ;
-        $('.work-example').removeClass('js-toggle__display');
+        $('.work-container__example').removeClass('js-toggle__display');
         $('.js-type-react').addClass('js-toggle__display');  
       });     
-      $('.work-buttons').on('click', '.js-toggle__button-work-fullstack', function(event) {
+      $('.js-toggle-buttons-container').on('click', '.js-toggle__button-work-fullstack', function(event) {
         $('.js-toggle__button-work').removeClass('button-active') ;
         $(this).addClass('button-active') ;
-        $('.work-example').removeClass('js-toggle__display');
+        $('.work-container__example').removeClass('js-toggle__display');
         $('.js-type-fullstack').addClass('js-toggle__display');  
       });     
       
 }
 
 function MobileMenuAnimation(){        
-    $('.mobile-menu-icon-container').on('click',function(event) {
+    $('.header__mobile-menu-icon-container').on('click',function(event) {
         $(this).toggleClass('change');  
-        $('nav').toggleClass('mobile-nav');
+        $('.nav').toggleClass('mobile-nav');
     });   
-    $('nav').on('click', function(event) {
-        $('.mobile-menu-icon-container').removeClass('change');  
-        $('nav').removeClass('mobile-nav');
+    $('.nav').on('click', function(event) {
+        $('.header__mobile-menu-icon-container').removeClass('change');  
+        $('.nav').removeClass('mobile-nav');
     });        
 }
 
 
 function activeNavLinks(){
-    $('.nav-link').on('click', function(event) {
-        $('.nav-link').removeClass('link-active') ;
+    $('.nav__list-item--home').on('click', function(event) {
+        $('.nav__list-item').removeClass('link-active') ;
         $(this).addClass('link-active') ;
       });   
+    $('.js-active--home').on('click',function(event){
+      $('.nav__list-item').removeClass('link-active');
+      $('.nav__list-item--home-link').addClass('link-active')
+    });
+    $('.js-active--contact').on('click',function(event){
+      $('.nav__list-item').removeClass('link-active');
+      $('.nav__list-item--contact-link').addClass('link-active')
+    })
 }
 
 function navScrollEffect() {
@@ -69,7 +77,7 @@ function navScrollEffect() {
     }); 
 }
 
-$('.work-av-link[href*="#"]').on('click', function(e) {
+$('.js-smooth-scroll[href*="#"]').on('click', function(e) {
     e.preventDefault();
     $('.blue-dots,.green-dots,.orange-dots').addClass('js-stop-animation');
   
