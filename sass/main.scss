@@ -49,6 +49,10 @@ $color-yellow:#fbcb43;
 a{
     color:$color-main-primary;
     text-decoration:none;
+
+    &:hover {
+        cursor: none;
+    }
 }
 
 
@@ -96,25 +100,23 @@ h2{
       height: 55px;
   }
 
-  .main--interior{
+.main--interior{
     margin-top:85px;
 }
 
 .nav{
     display:none;
+
+    &.mobile-nav{
+        display:block;
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        top: 0; 
+    }
 }
 
-.nav.mobile-nav{
-    display:block;
-    position: absolute;
-    right: 0;
-    height: 100vh;
-    width: 100%;
-    top: 0; 
-}
-
-
-  
 .nav__list{
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -123,29 +125,24 @@ h2{
     padding-inline-start: 0px;
     display: block;
     margin-top: 0px;
-}
-
-.nav__list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-top:2px;
+
+    //next two style should have same padding 
+    &-item{
+        padding-top:40px;
+        width:100px;
+    }
+
+    &-with-sub{
+        padding-top:40px;
+    }
 }
 
 .mobile-nav .nav__list{
     flex-direction: column;   
-}
-
-  
-  //next two style should be same size
-  .nav__list-item {
-    padding-top:40px;
-}
-.nav__list-with-sub{
-    padding-top:40px;
-}
-
-.nav__list li{
-    width:100px;
 }
 
 .nav__list-with-sub > li:nth-child(1){
@@ -158,34 +155,39 @@ h2{
     right: 10px;
     top: 10px;
     z-index:100;
-  }
 
-.header__mobile-menu-icon-container--bar1,
-.header__mobile-menu-icon-container--bar2, 
-.header__mobile-menu-icon-container--bar3 {
-    width: 35px;
-    height: 5px;
-    margin: 6px 0;
+    &--bar1,&--bar2,&--bar3{
+        width: 35px;
+        height: 5px;
+        margin: 6px 0;
+    }
 }
 
-  
-section {
+.section {
     position: relative;
     padding:30px 10px; 
+
+    &--home{
+        height: 50vh;
+    }
+    
+    &--contact{
+        padding-bottom:0;
+    }
+
+    &--about{
+        padding:0px; 
+    }
+
+    &__about-container{
+        padding:30px 20px; 
+    }
+
 }
 
 .body--interior section{
     padding:25px 15px;
     padding-bottom:0px;
-}
-
-.section--about{
-    padding:0px; 
-}
-
-  
-.section__about-container{
-    padding:30px 20px; 
 }
 
 blockquote{
@@ -195,24 +197,17 @@ blockquote{
     margin-block-end: 0em;
     font-style: italic;
     font-size: 1.65rem;
-   }
-   
-   cite {
+}
+
+cite {
        display: inline-block;
-   }
+}
    
-   .block{
-       display:block;
-   }
-
-   .section--home{
-    height: 50vh;
+.block{
+    display:block;
 }
 
-.section--contact{
-    padding-bottom:0;
-}
-
+//give this a class
 .section--home a{
     padding: 10px;
     display: block;
@@ -233,7 +228,7 @@ blockquote{
     width: 100%;
 }
 
-.button, button{
+.button{
     margin:auto;
     margin-bottom:10px;
     padding: 10px;
@@ -243,16 +238,25 @@ blockquote{
     display:block;
     font-size:1.8rem;
     text-align:center;
+
+    &:hover{
+        cursor:pointer;
+    }
+
+    &--wider{
+      width:150px;
+      margin: 10px;
+    }
+
+    &--solo{
+        display:block;
+        margin:auto;
+        margin-top:25px;
+        width:150px;
+        text-align:center;
+    }
 }
 
-button:hover{
-    cursor:pointer;
-}
-
-.button--wider{
-    width:150px;
-    margin: 10px;
-}
 
 .button-container--toggle-work {
     display: flex;
@@ -260,20 +264,13 @@ button:hover{
     flex-wrap:wrap;
     margin: 30px auto;
     margin-bottom: 60px; 
+
+    .button{
+        padding: 7px;
+        width:150px;
+    }
 }
 
-.button-container--toggle-work button{
-    padding: 7px;
-    width:150px;
-}
-
-.button--solo{
-    display:block;
-    margin:auto;
-    margin-top:25px;
-    width:150px;
-    text-align:center;
-}
 
 .work-image {
     max-width: 300px;
@@ -281,6 +278,8 @@ button:hover{
     margin: auto;
 }
 
+//not sure if these are being used
+/*
 .work-thumbnail {
     width: 220px;
     height: 200px;
@@ -292,7 +291,10 @@ button:hover{
     height: 200px;
     margin: 20px auto;
 }
-
+.thumb-size-button {
+    padding: 5px 10px;
+}
+*/
 .contact-form {
     width: 325px;
     height: 300px;
@@ -300,20 +302,39 @@ button:hover{
     display:none;
 }
 
-.thumb-size-button {
-    padding: 5px 10px;
-}
-
-.icon-button {
+//back to top button - change classname
+.icon-button svg{
     width: 40px;  
 }
 
 .social {
     margin-bottom: 50px;
+    
+    &--interior{
+        margin-bottom:1rem
+    }
 }
 
-.social img, .icon-button {
+.social svg, .icon-button svg{
     width: 60px;
+}
+
+.icon--white{
+    fill:#FFFFFF;
+}
+.icon--blue{
+    fill:$color-main-primary;
+}
+.icon--green{
+    fill:$color-green;
+}
+.icon--purple{
+    fill:$color-purple;
+}
+
+.icon-button:hover .icon--blue,.social a:hover .icon--green,.social a:hover .icon--purple{
+    fill:$color-orange;
+    cursor: pointer;
 }
 
 .display__desktop{
@@ -323,7 +344,29 @@ button:hover{
 .work-container__example{
     display: none;
     margin-top: 60px;
-    position:relative;   
+    position:relative;
+    cursor:pointer;   
+
+    &__heading{
+        margin-bottom:-25px;
+    }
+
+    &__button {
+        display: inline-block;
+        padding: 7px 14px;
+        width: 165px;
+    }
+    
+    &__button--mobile {
+      display: block;
+      padding: 6px;
+      width: 115px;
+      margin:auto;
+      margin-top:0px;
+    }
+    &:hover{
+        cursor:pointer;
+    }
 }
   
 .work-links a {
@@ -333,22 +376,13 @@ button:hover{
     text-decoration:underline;
     font-size:1.6rem;
 }
-
+//needs to be fixed; until then needs to be after .work-container__example display:none
 .js-toggle__display{
     display: block;
 }
 
-
 .marker {
     height: 15px; 
-}
-
-.work-image-container__description{
-    max-width:600px;
-}
-
-.work-container__example__heading{
-    margin-bottom:-25px;
 }
 
 .work-image-container {
@@ -357,57 +391,42 @@ button:hover{
     margin: 0px auto;
     overflow: hidden;
     position: relative;
-}
+    cursor:pointer;
 
-.work-image-container__mask {
-    width: 300px;
-    height: 225px;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0
-}
+    &__description{
+        max-width:600px;
+    }
 
-.work-image-container__image {
-    display: block;
-    position: relative;
-    width:300px;
-    padding-top: 37.5px;
-}
-.work-image-container__heading{
-    position: relative;
-    padding: 10px;
-    margin: 20px 0 0 0
-}
-.work-image-container p {
-    position: relative;
-    padding: 10px 15px;
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-.work-container__example__button {
-    display: inline-block;
-    padding: 7px 14px;
-    width: 165px;
-}
+    &__mask {
+        width: 300px;
+        height: 225px;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    &__image {
+        display: block;
+        position: relative;
+        width:300px;
+        padding-top: 37.5px;
+    }
+    &__heading{
+        position: relative;
+        padding: 10px;
+        margin: 20px 0 0 0
+    }
 
-.work-container__example__button--mobile {
-  display: block;
-  padding: 6px;
-  width: 115px;
-  margin:auto;
-  margin-top:0px;
-}
-
-.work-image-container__mask { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-}	
-
-.work-image-container__heading{
-    margin: 20px 0px 0px 0px;
+    p{
+        position: relative;
+        padding: 10px 15px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
 }
 
 /*****interior pages***/
@@ -567,7 +586,7 @@ button:hover{
     align-items: center;     
   }
   
-  .nav__list li{
+  .nav__list-item{
       text-align:center;
   }
  
@@ -690,6 +709,7 @@ button:hover{
       border: 1px solid $color-orange;
   }
   
+  /*
   .button--blue:hover{
       border: 1px solid $color-orange;
   }
@@ -697,7 +717,7 @@ button:hover{
   .button--green:hover {
       border: 1px solid $color-orange;
   }
-  
+  */
   .button--purple:focus {
       outline: $color-purple 5px auto;
   }
@@ -759,7 +779,7 @@ button:hover{
   
   .work-image-container {
       text-align: center;
-      cursor: default;
+      //cursor: default;
   }
 
   .work-image-container__heading{
@@ -786,11 +806,18 @@ button:hover{
   .work-container__example__button--mobile {
     text-decoration: none;
     background-color: $color-purple;
+    border:2px solid $color-purple;
     color: $color-main-white;
     text-transform: uppercase;
     box-shadow: 0 0 1px $color-main-black;
     font-size: 1.4rem;
     text-align: center;
+    z-index:400;
+    cursor:pointer;
+
+    &:hover{
+        cursor:pointer;
+    }
 }
   
   .work-image-container__image { 
@@ -995,6 +1022,8 @@ button:hover{
       font-size: 1.8rem;
   }
 
+  
+
   /********Media Queries*********/
   
   @media only screen and (min-width:500px){
@@ -1015,7 +1044,6 @@ button:hover{
  .work-image-container__mask{
       width: 450px;
       height: 337.5px;
-  
   }
   .work-image-container__image {
       width:450px;
@@ -1026,7 +1054,7 @@ button:hover{
       margin-bottom:-45px;
   }
   .work-container__example__button--mobile{
-      margin-top:-25px;
+      //margin-top:-25px;
   }
   
   .work-image {
@@ -1055,7 +1083,6 @@ button:hover{
     display:none;
 }
 
-
 .body--interior section {
     padding: 20px 25px;
 }
@@ -1071,7 +1098,6 @@ button:hover{
 .work-image-container__mask {
     width: 510px;
     height: 382.5px;
-
 }
 .work-image-container__image {
     width:510px;
@@ -1106,16 +1132,21 @@ button:hover{
 
 .nav__list li, ul.nav__list-with-sub {
     width: 75px;
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom:5px
 }
 
 .nav__list-with-sub li{
    width: 225px;
-}
+   border-bottom: 2px solid #fff;
 
-.nav__list-with-sub li:hover{
+   &:hover{
     display:block;
-} 
+    background-color: #00003d;
+    border: 0px solid #fff;
+    border-bottom: 2px solid #fff;
+   }
+}
 
 .nav__list-with-sub > li:nth-child(1) {
     padding-top: 0;
@@ -1166,7 +1197,6 @@ header{
     order:3;
 }
 
-
  /***end layout mw760***/
   .header__mobile-menu-icon-container--bar1, 
   .header__mobile-menu-icon-container--bar2, 
@@ -1199,7 +1229,7 @@ header{
   }
  
   .nav__list-with-sub li:hover{
-      background-color:$color-orange;
+      //background-color:$color-orange;
 
   } 
   
@@ -1219,7 +1249,7 @@ header{
     }
     
     .nav__list__sub-nav-container a:hover {
-      background-color:$color-orange;
+      //background-color:$color-orange;
     }
    
   header{
@@ -1251,16 +1281,16 @@ header{
   }
   
   .nav__list-with-sub a {
-      border-bottom: 2px solid $color-main-white;
+      //border-bottom: 2px solid $color-main-white;
   }
   
   .header--blue-white a:hover {
-      border-bottom: 2px solid $color-orange;
+      //border-bottom: 2px solid $color-orange;
       color:$color-main-white;
   }
 
   .nav__list-item--sub-nav a:hover {
-    border-bottom: 2px solid $color-main-primary;
+    //border-bottom: 2px solid $color-main-primary;
 }
   
   .header--blue-white a.focused-link{
@@ -1275,6 +1305,95 @@ header{
   .list__item--role, .list__item--tech{
       font-size:1.85rem;
   }
+
+  /******cursor*********/
+  html {
+    cursor: none;
+  }
+  .button:hover{
+      cursor:none;
+  }
+  .icon-button:hover .icon--blue,.social a:hover .icon--green,.social a:hover .icon--purple{
+    cursor: none;
+}
+.work-image-container, .work-container__example__button--mobile, .work-container__example{
+    cursor:none;
+}
+
+
+
+
+  .cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    opacity:1;
+    transition:opacity 300ms;
+  }
+  .cursor--small {
+    width: 5px;
+    height: 5px;
+    left: -2.5px;
+    top: -2.5px;
+    border-radius: 50%;
+    z-index: 110000;
+    background: $color-orange;
+  }
+
+  .js-cursor--small-get-bigger{
+    width: 7.5px;
+    height: 7.5px;
+  }
+
+  .cursor--large, .cursor--border {
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    top: -15px;
+    border-radius: 50%;
+    z-index: 110000;
+    border: 2px solid $color-purple;
+    transition:transform 50ms linear;
+  }
+
+  .cursor--border{
+    width: 34px;
+    height: 34px;
+    left: -17px;
+    top: -17px;
+    border: 2px solid $color-main-white;
+  }
+
+  .js-cursor--hover{
+      opacity:0;
+  }
+
+  .nav__list-item{
+      border:0px solid $color-orange;
+      transition:border 100ms;
+      padding-bottom:5px;
+      padding-top:5px;
+  }
+
+  .nav__list-item:hover{
+    border:2px solid $color-orange;
+  }
+
+  .button:hover{
+    border:2px solid $color-orange !important;
+    border-radius:10px;
+  }
+
+  .work-container__example__button--mobile:hover{
+      background-color:$color-main-white;
+      color:$color-orange;
+  }
+
+  
+  .main--landing-page, .main--landing-page a {
+    cursor: none;
+   }
 
   
   }/*end of MQ760px*/
@@ -1396,7 +1515,7 @@ header{
   }
   .work-image-container-effect:hover .work-image-container__mask { 
       opacity: 1;
-      cursor: pointer;
+      //cursor: pointer;
   }																			 
   .work-image-container-effect:hover .work-image-container__heading,
   .work-image-container-effect:hover p,
@@ -1404,12 +1523,28 @@ header{
       transform: scale(1);
       opacity: 1;
   }
+
+  .work-container__example__button{
+      cursor: none;
+      transition: cursor 300ms;
+  }
+
+  .work-container__example__button:hover{
+      border:2px $color-orange solid;
+      background:$color-main-primary;
+      border-radius:10px;
+      //cursor: pointer;
+  }
   
   .footer {
       display: flex;
       width: 100%;
       padding: 0 10px;
       justify-content: space-between;
+
+      &--interior{
+          margin-top:7rem;
+      }
   }
   
   .footer__contact, .footer__other {
@@ -1568,10 +1703,10 @@ header{
   }
   .blue-dots, .green-dots, .orange-dots{
   -webkit-animation-name: opacity;
-  -webkit-animation-duration: 6s;
-  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
   animation-name: opacity;
-  animation-duration: 6s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
   }
   

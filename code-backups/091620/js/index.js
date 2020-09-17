@@ -90,57 +90,11 @@ $('.js-smooth-scroll[href*="#"]').on('click', function(e) {
     )
   })
 
-/**********cursor animation***********/
-
-// set the starting position of the cursor outside of the screen
-let clientX = -300;
-let clientY = -300;
-const innerCursor = document.querySelector(".cursor--small");
-const outerCursor = document.querySelector(".cursor--large");
-const borderCursor = document.querySelector(".cursor--border");
-
-
-const initCursor = () => {
-  // add listener to track the current mouse position
-  document.addEventListener("mousemove", e => {
-    clientX = e.clientX;
-    clientY = e.clientY;
-  });
-
-  
-  // transform the innerCursor to the current mouse position
-  // use requestAnimationFrame() for smooth performance
-  const render = () => {
-    innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
-    
-    outerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
-    borderCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
-
-    requestAnimationFrame(render);
-  };
-  requestAnimationFrame(render);
-};
-
-
-const initHovers = () => {
-
-  $(".js-change-cursor").hover(function () {
-   // $(this).toggleClass("js-nav__list-item--hover");
-    $('.cursor--large').toggleClass("js-cursor--hover");
-    $('.cursor--border').toggleClass("js-cursor--hover");
-    $('.cursor--small').toggleClass("js-cursor--small-get-bigger");
-  });
-
-};
-
-
 function onLoad() {   
     handleClickToSeeWorkExamples();
     MobileMenuAnimation();
     navScrollEffect();
     activeNavLinks();
-    initCursor();
-    initHovers();
 };
   
 $(onLoad);
